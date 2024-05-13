@@ -3,12 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --light-pink: #ffd6e6;
+  --medium-pink: #ff77af;
+  --dark-pink: #be2555;
+  --white: #fffefe;
+  background-color: var(--light-pink);
+  color: var(--dark-pink);
 }
 
-body {
+h1,
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 @layer utilities {
