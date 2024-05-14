@@ -1,21 +1,10 @@
-import AboutUs from "./(routes)/about/page";
-import ContactUs from "./(routes)/contact/page";
-import Gallery from "./(routes)/gallery/page";
-import MeetTheTeam from "./(routes)/meet-the-team/page";
-import WorkWithUs from "./(routes)/work-with-us/page";
+import Header from "@/components/header/Header";
+import Hero from "@/components/hero/Hero";
 
 export default function Home() {
   return (
     <>
-      <button class="rounded-full border-4 border-pink-500 text-pink-500 bg-transparent py-0.5 px-5">
-        MENU
-      </button>
-
-      <AboutUs />
-      <ContactUs />
-      <Gallery />
-      <MeetTheTeam />
-      <WorkWithUs />
+      <Hero />
     </>
   );
 }
