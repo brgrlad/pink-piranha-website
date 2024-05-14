@@ -12,17 +12,27 @@
 }
 
 h1,
-h2 {
+h2,
+h3,
+h5,
+h5 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+/* logo */
 h1 {
   font-size: 3rem;
   border: 1px solid pink;
 }
 
+/* hero text */
 h2 {
   font-size: 1.5rem;
+}
+
+/* used for cards with link */
+h3 {
+  font-size: 2rem;
 }
 
 p {
@@ -34,7 +44,7 @@ p {
   background-image: url(../../public/hero.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 @layer utilities {

@@ -1,5 +1,11 @@
-import React from "react";
+import { useState } from "react";
 
 export default function Menu() {
-  return <nav>Menu</nav>;
+  let [isClicked, setIsClicked] = useState(false);
+
+  return (
+    <nav>
+      <button> MENU</button>
+    </nav>
+  );
 }
