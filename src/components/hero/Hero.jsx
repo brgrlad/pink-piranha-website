@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "../header/Header";
 import LinkCard from "../link-card/LinkCard";
+import Menu from "../menu/Menu";
 
 export default function Hero() {
   return (
-    <section className="hero bg-pink-900 text-pink-200 px-10 py-5">
+    <section className="hero bg-pink-900 text-pink-200 px-10 py-10">
       <Header />
+      <Menu />
 
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto mt-10 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
         <div class="mr-auto place-self-center lg:col-span-7">

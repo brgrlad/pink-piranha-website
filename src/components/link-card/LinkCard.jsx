@@ -1,6 +1,6 @@
 export default function LinkCard({ title, content, link }) {
   return (
-    <div class="max-w-xs p-6 bg-pink-200 bg-opacity-10 rounded-xl text-pink-200">
+    <div class="max-w-xs h-50 py-2 px-4 bg-pink-200 bg-opacity-10 rounded-xl text-pink-200 mb-5">
       <a href="#">
         <h3 class="mb-2">{title}</h3>
       </a>
