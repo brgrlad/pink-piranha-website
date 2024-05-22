@@ -13,7 +13,7 @@ export default function LinkCard({
       style={{ height, width }}
       className={`py-2 px-4 bg-pink-200 rounded-xl text-pink-800 flex flex-col justify-center mb-${marginBottom}`}
     >
-      <h3 class="mb-2 md:text-3xl text-xl">{title}</h3>
+      <h3 class="mb-2 md:text-3xl text-lg">{title}</h3>
 
       <p class="mb-3 text-sm ">{content}</p>
 
