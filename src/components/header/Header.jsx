@@ -20,7 +20,7 @@ export default function Header() {
 
       <button
         type="button"
-        className="bg-transparent border-4 border-pink-700 text-pink-700  font-bold rounded-full text-sm  px-8 py-2 text-center mb-2 z-50 "
+        class="bg-transparent border-4 border-pink-700 text-pink-700  font-bold rounded-full text-sm  px-8 py-2 text-center mb-2 z-50"
         onClick={() => setIsClicked((prev) => !isClicked)}
       >
         {isClicked ? "CLOSE" : "MENU"}

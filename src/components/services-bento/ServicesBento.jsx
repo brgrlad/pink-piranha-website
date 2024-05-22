@@ -5,8 +5,8 @@ export default function ServicesBento() {
   return (
     <section className="w-full py-10 md:px-10 px-5 flex flex-end mt-[-80px]">
       {/* LEFT SIDE GRID */}
-      <div class="grid grid-cols-1 gap-y-[20px] w-1/3 overflow-hidden justify-end items-center border-2">
-        <div class="flex h-[400px]  self-end">
+      <div class="grid grid-cols-1 gap-y-[20px] w-1/3 overflow-hidden justify-end items-center">
+        <div class="flex w-full self-end aspect-square">
           <Image
             src={bentoImage}
             alt="placeholder image"
@@ -14,14 +14,16 @@ export default function ServicesBento() {
           />
         </div>
 
-        <div class="flex h-[400px] self-end">
+        {/* <div class="flex h-[400px] self-end"> */}
+        <div class="flex w-full self-end aspect-square">
           <Image
             src={bentoImage}
             alt="placeholder image"
             class="rounded-3xl h-full object-cover"
           />
         </div>
-        <div class="flex h-[400px] self-end">
+        {/* <div class="flex h-[400px] self-end"> */}
+        <div class="flex w-full self-end aspect-square">
           <Image
             src={bentoImage}
             alt="placeholder image"
@@ -32,9 +34,7 @@ export default function ServicesBento() {
 
       {/* RIGHT SIDE GRID */}
       <div class="grid grid-cols-2 gap-[20px] w-2/3 px-4 items-end overflow-hidden">
-        <div class="flex items-center justify-center h-[200px] col-span-1 self-end">
-          hey
-        </div>
+        <div class="flex items-center justify-center h-[200px] col-span-1 self-end"></div>
         <div class="flex items-center justify-center h-[200px] col-span-1 self-end"></div>
         <div class="flex items-center justify-center h-[600px] col-span-2 self-end">
           <Image

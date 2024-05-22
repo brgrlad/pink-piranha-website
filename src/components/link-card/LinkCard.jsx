@@ -1,16 +1,23 @@
-export default function LinkCard({ title, content, link }) {
+import Link from "next/link";
+
+export default function LinkCard({
+  title,
+  content,
+  link = "http://pinkpiranha.ie",
+  height = "200px",
+  width = "400px",
+  marginBottom = "5",
+}) {
   return (
-    <div class="max-w-xs h-50 py-2 px-4 bg-pink-200 bg-opacity-10 rounded-xl text-pink-200 mb-5">
-      <a href="#">
-        <h3 class="mb-2">{title}</h3>
-      </a>
+    <div
+      style={{ height: height, width: width }}
+      className={`py-2 px-4 bg-pink-200 bg-opacity-10 rounded-xl text-pink-200 flex flex-col justify-center mb-${marginBottom}`}
+    >
+      <h3 class="mb-2">{title}</h3>
 
       <p class="mb-3 text-sm">{content}</p>
 
-      <a
-        href={link}
-        class="inline-flex font-medium items-center w-full justify-end text-sm hover:text-pink-300"
-      >
+      <Link href="#" class="flex justify-end items-center w-full">
         Know more
         <svg
           class="h-8 w-8 ml-2"
@@ -25,7 +32,7 @@ export default function LinkCard({ title, content, link }) {
             d="M17 8l4 4m0 0l-4 4m4-4H3"
           />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 }
