@@ -3,6 +3,7 @@ import ServicesBento from "../components/services-bento/ServicesBento";
 
 import WelcomeCard from "@/components/welcome-card/WelcomeCard";
 import WhatWeDo from "@/components/what-we-do/WhatWeDo";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
         <ServicesBento />
         <WhatWeDo />
       </main>
+
+      <Footer />
     </>
   );
 }

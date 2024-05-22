@@ -5,19 +5,19 @@ export default function LinkCard({
   content,
   link = "http://pinkpiranha.ie",
   height = "200px",
-  width = "400px",
-  marginBottom = "5",
+  width = "100%",
+  marginBottom = "10",
 }) {
   return (
     <div
-      style={{ height: height, width: width }}
-      className={`py-2 px-4 bg-pink-200 bg-opacity-10 rounded-xl text-pink-200 flex flex-col justify-center mb-${marginBottom}`}
+      style={{ height, width }}
+      className={`py-2 px-4 bg-pink-200 rounded-xl text-pink-800 flex flex-col justify-center mb-${marginBottom}`}
     >
-      <h3 class="mb-2">{title}</h3>
+      <h3 class="mb-2 md:text-3xl text-xl">{title}</h3>
 
-      <p class="mb-3 text-sm">{content}</p>
+      <p class="mb-3 text-sm ">{content}</p>
 
-      <Link href="#" class="flex justify-end items-center w-full">
+      <Link href="#" class="flex justify-end items-center w-full ">
         Know more
         <svg
           class="h-8 w-8 ml-2"

@@ -10,7 +10,7 @@ export default function WhatWeDo() {
         WHAT WE DO
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-2 sm-gap-x-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-3 sm-gap-x-0">
         <LinkCard
           title={"Event Staffing"}
           content={

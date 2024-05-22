@@ -48,6 +48,13 @@ p {
   min-height: 100vh;
 }
 
+footer {
+  background-image: url(../../public/footer-image.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
