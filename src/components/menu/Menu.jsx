@@ -5,44 +5,47 @@ import Link from "next/link";
 
 export default function Menu() {
   return (
-    <nav className="fixed z-40 top-0 right-0 overflow-hidden bg-pink-400 m-2 rounded-xl p-5 w-[97%]  lg:w-[50%]">
+    <nav className="fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%]  md:w-[75%] xl:w-[50%]bg-pink-300 bg-opacity-70 shadow-lg backdrop-blur-lg">
       <Image src={logo} width={100} height={100} alt="Pink Piranha logo" />
-      <div class="grid grid-cols-2 gap-4 px-4 pt-4 pb-2">
-        <div class="left-column">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4 pb-2">
+        <div class="left-column md:order-1 order-2">
           <LinkCard
-            title={"WORK WITH US!"}
+            title={"WORK WITH US"}
             content={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolor porro est mollitia enim iste"
+              "We're currently hiring for a variety of positions! Send us your CV!  "
             }
             link="/work-with-us"
+            height="130px"
           />
           <LinkCard
-            title={"REACH OUT!"}
+            title={"REACH OUT"}
             content={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolor porro est mollitia enim iste ab rerum, minimaautem aspernatur?"
+              "Need a quote, want to discuss your ideas? We're be happy to help! "
             }
             link="/work-with-us"
+            height="130px"
           />
         </div>
-        <div class="right-column">
-          <ul className="h-full text-right flex flex-col justify-between text-2xl text-pink-700 font-bold">
-            <li>
-              <Link href="/" className="bg-pink-300 p-3 rounded-xl ">
+        <div class="right-column md:order-2 order-1">
+          <ul className="h-full pb-10 text-right flex flex-col justify-between text-2xl text-pink-100 font-bold">
+            <li class="py-2">
+              <Link href="/" className="rounded-xl ">
                 HOME
               </Link>
             </li>
 
-            <li>
+            <li class="py-2">
               <Link href="/meet-the-team"> MEET THE TEAM </Link>
             </li>
-            <li>
+            <li class="py-2">
               <Link href="/what-we-do"> WHAT WE DO</Link>
             </li>
 
-            <li className="flex justify-end ">
+            <li className="flex justify-end py-2">
+              INSTAGRAM
               <Link href="www.google.com">
                 <svg
-                  class="h-8 "
+                  class="h-8 ml-2 "
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"

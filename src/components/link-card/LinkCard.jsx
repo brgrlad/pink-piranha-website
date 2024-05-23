@@ -11,13 +11,13 @@ export default function LinkCard({
   return (
     <div
       style={{ width, height, marginBottom }}
-      className={`py-2 px-4 bg-pink-200 rounded-xl text-pink-800 flex flex-col justify-center`}
+      className={`py-1 md:py-2 px-4 bg-pink-900 rounded-xl text-pink-200 flex flex-col justify-center`}
     >
-      <h3 class="mb-2 md:text-3xl text-lg">{title}</h3>
+      <h3 class="mb-1 md:text-3xl text-lg">{title}</h3>
 
-      <p class="mb-3 text-sm ">{content}</p>
+      <p class="mb-1 text-sm ">{content}</p>
 
-      <Link href={`${link}`} class="flex justify-end items-center w-full ">
+      <Link href={`${link}`} class="flex justify-end items-center w-full h-3 ">
         Know more
         <svg
           class="h-8 w-8 ml-2"
