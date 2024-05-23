@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function LinkCard({
   title,
   content,
-  link = "http://pinkpiranha.ie",
+  link,
   width = "100%",
   height = "200px",
   marginBottom = "20px",
@@ -17,7 +17,7 @@ export default function LinkCard({
 
       <p class="mb-3 text-sm ">{content}</p>
 
-      <Link href="#" class="flex justify-end items-center w-full ">
+      <Link href={`${link}`} class="flex justify-end items-center w-full ">
         Know more
         <svg
           class="h-8 w-8 ml-2"

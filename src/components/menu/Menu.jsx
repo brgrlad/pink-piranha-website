@@ -14,12 +14,14 @@ export default function Menu() {
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolor porro est mollitia enim iste"
             }
+            link="/work-with-us"
           />
           <LinkCard
             title={"REACH OUT!"}
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolor porro est mollitia enim iste ab rerum, minimaautem aspernatur?"
             }
+            link="/work-with-us"
           />
         </div>
         <div class="right-column">
@@ -29,14 +31,12 @@ export default function Menu() {
                 HOME
               </Link>
             </li>
-            <li>
-              <Link href="/about"> WHAT WE DO </Link>
-            </li>
+
             <li>
               <Link href="/meet-the-team"> MEET THE TEAM </Link>
             </li>
             <li>
-              <Link href="/gallery"> GALLERY</Link>
+              <Link href="/what-we-do"> WHAT WE DO</Link>
             </li>
 
             <li className="flex justify-end ">
