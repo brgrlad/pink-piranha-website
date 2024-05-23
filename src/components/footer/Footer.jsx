@@ -16,7 +16,7 @@ export default function Footer() {
           <LinkCard
             title={"WORK WITH US!"}
             width="60%"
-            marginBottom="5"
+            marginBottom="20px"
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolor porro est mollitia enim iste ab rerum, minimaautem aspernatur?"
             }
@@ -24,7 +24,7 @@ export default function Footer() {
           <LinkCard
             title={"REACH OUT!"}
             width="60%"
-            marginBottom="5"
+            marginBottom="20px"
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolor porro est mollitia enim iste ab rerum, minimaautem aspernatur?"
             }

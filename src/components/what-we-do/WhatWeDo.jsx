@@ -16,8 +16,8 @@ export default function WhatWeDo() {
           content={
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, aliquam earum? Officiis ducimus ipsum laborios."
           }
-          height="250px"
           width="full"
+          height="250px"
           marginBottom="0"
         />
         <LinkCard

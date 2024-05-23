@@ -4,14 +4,14 @@ export default function LinkCard({
   title,
   content,
   link = "http://pinkpiranha.ie",
-  height = "200px",
   width = "100%",
-  marginBottom = "10",
+  height = "200px",
+  marginBottom = "20px",
 }) {
   return (
     <div
-      style={{ height, width }}
-      className={`py-2 px-4 bg-pink-200 rounded-xl text-pink-800 flex flex-col justify-center mb-${marginBottom}`}
+      style={{ width, height, marginBottom }}
+      className={`py-2 px-4 bg-pink-200 rounded-xl text-pink-800 flex flex-col justify-center`}
     >
       <h3 class="mb-2 md:text-3xl text-lg">{title}</h3>
 

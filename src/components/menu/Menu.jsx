@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Menu() {
   return (
-    <nav className="fixed z-40 top-0 right-0 overflow-hidden bg-pink-400 m-2 rounded-xl p-5">
+    <nav className="fixed z-40 top-0 right-0 overflow-hidden bg-pink-400 m-2 rounded-xl p-5 w-[97%] md:w-[50%]">
       <Image src={logo} width={100} height={100} alt="Pink Piranha logo" />
       <div class="grid grid-cols-2 gap-4 px-4 pt-4 pb-2">
         <div class="left-column">
