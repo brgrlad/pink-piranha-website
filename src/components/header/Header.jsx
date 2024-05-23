@@ -1,5 +1,5 @@
 "use client";
-import logo from "../../../public/gradients/logo.png";
+import logo from "../../../public/img/pink-piranha-logo.png";
 import Image from "next/image";
 import Menu from "../menu/Menu";
 import { useState } from "react";

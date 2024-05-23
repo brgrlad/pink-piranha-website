@@ -9,40 +9,40 @@ export default function WorkWithUs() {
           <div class="mb-5">
             <label
               for="base-input"
-              class="block mb-2 text-sm font-medium text-pink-900"
+              class="block mb-2 text-sm font-medium text-pink-800"
             >
               Name
             </label>
             <input
               type="text"
               id="base-input"
-              class="bg-pink-100 border border-pink-500 text-pink-900 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 block w-full p-2.5"
+              class="bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 block w-full p-2.5"
             />
           </div>
           <div class="mb-5">
             <label
               for="base-input"
-              class="block mb-2 text-sm font-medium text-pink-900"
+              class="block mb-2 text-sm font-medium text-pink-800"
             >
               E-mail Address
             </label>
             <input
               type="e-mail"
               id="base-input"
-              class="bg-pink-100 border border-pink-500 text-pink-900 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 block w-full p-2.5"
+              class="bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 block w-full p-2.5"
             />
           </div>
 
           <label
             for="message"
-            class="block mb-2 text-sm font-medium text-pink-900"
+            class="block mb-2 text-sm font-medium text-pink-800"
           >
             Your message
           </label>
           <textarea
             id="message"
             rows="4"
-            class="block p-2.5 w-full text-sm bg-pink-100 border border-pink-500 text-pink-900 rounded-2xl focus:ring-pink-900 focus:border-pink-900"
+            class="block p-2.5 w-full text-sm bg-pink-100 border border-pink-500 text-pink-800 rounded-2xl focus:ring-pink-900 focus:border-pink-900"
             placeholder="Tell us about yourself..."
           ></textarea>
 

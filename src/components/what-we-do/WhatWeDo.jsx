@@ -1,7 +1,4 @@
-import React from "react";
-import Image from "next/image";
 import LinkCard from "../link-card/LinkCard";
-import logo from "../../../public/gradients/logo.png";
 
 export default function WhatWeDo() {
   return (

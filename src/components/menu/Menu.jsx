@@ -1,4 +1,4 @@
-import logo from "../../../public/gradients/logo.png";
+import logo from "../../../public/img/pink-piranha-logo.png";
 import LinkCard from "../link-card/LinkCard";
 import Image from "next/image";
 import Link from "next/link";
