@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function WelcomeCard() {
   return (
-    <section class="bg-pink-200 md:px-10 px-5 rounded-3xl relative">
-      <div class="grid max-w-screen-xl py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 h-auto">
-        <div class="mr-auto place-self-center lg:col-span-7">
+    <section className="bg-pink-200 md:px-10 px-5 rounded-3xl relative">
+      <div className="grid max-w-screen-xl py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 h-auto">
+        <div className="mr-auto place-self-center lg:col-span-7">
           <h2 className=" text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl">
             WELCOME TO <span className="sm:inline block"> PINK PIRANHA </span>
           </h2>
@@ -14,19 +14,19 @@ export default function WelcomeCard() {
             Where events come alive with the perfect team
           </h3>
 
-          <p class="md:text-lg lg:text-xl mt-5 w-[100%] md:w-[70%] xg:w-[80%]">
+          <p className="md:text-lg lg:text-xl mt-5 w-[100%] md:w-[70%] xg:w-[80%]">
             We specialize in providing you with talented and dynamic individuals
             who will assist in bringing your vision to life.
           </p>
 
-          <p class="md:text-lg lg:text-xl mt-5 w-[100%] md:w-[60%] xg:w-[80%]">
+          <p className="md:text-lg lg:text-xl mt-5 w-[100%] md:w-[60%] xg:w-[80%]">
             Whether you're planning a corporate affair, a festival, or an
             intimate gathering, we've got the expertise to ensure your venture
             is successful.
           </p>
 
-          {/* <p class="md:w-2/3 xl:w-2/3 md:text-lg lg:text-xl mt-5"> */}
-          <p class="md:text-lg lg:text-xl mt-5 w-[100%] md:w-[50%] xg:w-[80%]">
+          {/* <p className="md:w-2/3 xl:w-2/3 md:text-lg lg:text-xl mt-5"> */}
+          <p className="md:text-lg lg:text-xl mt-5 w-[100%] md:w-[50%] xg:w-[80%]">
             Let's make your next event unforgettable together!{" "}
           </p>
         </div>

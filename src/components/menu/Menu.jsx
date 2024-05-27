@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function Menu() {
   return (
-    <nav className="fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%]  md:w-[75%] xl:w-[50%]bg-pink-300 bg-opacity-70 shadow-lg backdrop-blur-lg">
+    <nav className="fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%] md:w-[60%] xl:w-[50%] selection:bg-pink-300 shadow-xl bg-gradient-to-r from-pink-400 via-pink-500 to-pink-800">
       <Image src={logo} width={100} height={100} alt="Pink Piranha logo" />
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4 pb-2">
-        <div class="left-column md:order-1 order-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4 pb-2">
+        <div className="left-column md:order-1 order-2">
           <LinkCard
             title={"WORK WITH US"}
             content={
@@ -26,18 +26,18 @@ export default function Menu() {
             height="130px"
           />
         </div>
-        <div class="right-column md:order-2 order-1">
+        <div className="right-column md:order-2 order-1">
           <ul className="h-full pb-10 text-right flex flex-col justify-between text-2xl text-pink-100 font-bold">
-            <li class="py-2">
+            <li className="py-2">
               <Link href="/" className="rounded-xl ">
                 HOME
               </Link>
             </li>
 
-            <li class="py-2">
+            <li className="py-2">
               <Link href="/meet-the-team"> MEET THE TEAM </Link>
             </li>
-            <li class="py-2">
+            <li className="py-2">
               <Link href="/what-we-do"> WHAT WE DO</Link>
             </li>
 
@@ -45,13 +45,13 @@ export default function Menu() {
               INSTAGRAM
               <Link href="www.google.com">
                 <svg
-                  class="h-8 ml-2 "
+                  className="h-8 ml-2 "
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />{" "}
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />{" "}

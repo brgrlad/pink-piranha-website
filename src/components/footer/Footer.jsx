@@ -9,10 +9,10 @@ Image;
 export default function Footer() {
   return (
     <footer className="mx-auto p-1 md:p-5">
-      <div class="flex md:flex-row flex-col justify-between items-center">
-        <Image src={logo} alt="pink piranha logo" class="w-[50%] my-5" />
+      <div className="flex md:flex-row flex-col justify-between items-center">
+        <Image src={logo} alt="pink piranha logo" className="w-[50%] my-5" />
 
-        <div class="flex flex-col items-center mb-6 text-sm font-medium w-[100%] md:w-[50%]">
+        <div className="flex flex-col items-center mb-6 text-sm font-medium w-[100%] md:w-[50%]">
           <LinkCard
             title={"WORK WITH US!"}
             width="60%"
@@ -32,13 +32,13 @@ export default function Footer() {
 
       <Link href="www.google.com">
         <svg
-          class="h-12 ml-auto mx-5"
+          className="h-12 ml-auto mx-5"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />{" "}
           <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />{" "}
@@ -46,7 +46,7 @@ export default function Footer() {
         </svg>
       </Link>
 
-      <p class="text-sm sm:text-center w-full">
+      <p className="text-sm sm:text-center w-full">
         © 2023 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
         delectus.
       </p>

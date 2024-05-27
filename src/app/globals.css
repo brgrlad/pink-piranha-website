@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Aventine";
+  src: url("/fonts/Aventine.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --light-pink: #ffd6e6;
   --medium-pink: #ff77af;
@@ -17,7 +24,13 @@ h2,
 h3,
 h5,
 h5 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  font-family: "Aventine";
+}
+
+p {
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* logo */
