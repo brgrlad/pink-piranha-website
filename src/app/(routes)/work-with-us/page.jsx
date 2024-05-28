@@ -55,7 +55,7 @@ export default function WorkWithUs() {
             <div className="mb-5">
               <label
                 htmlFor="firstName"
-                className="block mb-2 text-sm font-medium text-pink-800"
+                className="mb-2 text-sm font-medium text-pink-800"
               >
                 Name
               </label>
@@ -65,9 +65,11 @@ export default function WorkWithUs() {
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 block w-full p-2.5"
+                required
+                className="block bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 w-full p-2.5"
               />
             </div>
+
             <div className="mb-5">
               <label
                 htmlFor="emailAddress"
@@ -110,6 +112,7 @@ export default function WorkWithUs() {
               name="message"
               value={formData.message}
               onChange={handleChange}
+              required
               placeholder="Tell us about yourself..."
               rows="4"
               className="block p-2.5 w-full text-sm bg-pink-100 border border-pink-500 text-pink-800 rounded-2xl focus:ring-pink-900 focus:border-pink-900"
@@ -134,149 +137,3 @@ export default function WorkWithUs() {
     </>
   );
 }
-
-// "use client";
-// import { useState } from "react";
-// import Modal from "@/components/about-card/modal/Modal";
-
-// let initialObj = {
-//   firstName: "",
-//   emailAddress: "",
-//   uploadedFile: "",
-//   message: "",
-// };
-
-// export default function WorkWithUs() {
-//   let [formData, setFormData] = useState(initialObj);
-//   let [showModal, setShowModal] = useState(false);
-
-//   // HANDLE USER INPUT
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData({
-//       ...formData,
-//       [name]: value,
-//     });
-//   };
-
-//   // HANDLE FORM SUBMIT TO BACKEND
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     setShowModal(true);
-//     setFormData(initialObj);
-//   };
-
-//   return (
-//     <>
-//       {showModal && (
-//         <Modal
-//           title={`Thank you!`}
-//           message={"We will reply as soon as possible."}
-//           onClose={() => setShowModal(false)}
-//         />
-//       )}
-//       <section className="grid grid-cols-1 lg:grid-cols-3 p-5 md:p-10">
-//         <div className="formWrapper w-[100%] col-span-2 flex flex-col order-2 lg:order-1">
-//           <h2 className="text-4xl md:text-6xl py-5">Work with us!</h2>
-
-//           {/* FORM WRAPPER */}
-//           <form className="mb-20" onSubmit={(e) => handleSubmit(e)}>
-//             {/* FIRST NAME LABEL */}
-//             <div className="mb-5">
-//               <label
-//                 htmlFor="firstName"
-//                 className="block mb-2 text-sm font-medium text-pink-800"
-//               >
-//                 Name
-//               </label>
-
-//               {/* FIRST NAME INPUT */}
-//               <input
-//                 type="text"
-//                 id="FirstName"
-//                 name="firstName"
-//                 value={formData.firstName}
-//                 onChange={handleChange}
-//                 className="bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 block w-full p-2.5"
-//               />
-//             </div>
-
-//             {/* LABEL FOR EMAIL ADDRESS */}
-//             <div className="mb-5">
-//               <label
-//                 htmlFor="emailAddress"
-//                 className="block mb-2 text-sm font-medium text-pink-800"
-//               >
-//                 E-mail Address
-//               </label>
-
-//               {/* EMAIL ADDRESS INPUT */}
-//               <input
-//                 type="email"
-//                 id="emailAddress"
-//                 name="emailAddress"
-//                 value={formData.emailAddress}
-//                 onChange={handleChange}
-//                 className="bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 block w-full p-2.5"
-//               />
-//             </div>
-
-//             {/* LABEL FOR FILE */}
-//             <label
-//               className="block mb-2 text-sm font-medium text-pink-800"
-//               htmlFor="file_input"
-//             >
-//               Upload file or CV (if applicable)
-//             </label>
-
-//             {/* FILE UPLOAD INPUT */}
-//             <input
-//               type="file"
-//               id="uploadedFile"
-//               name="uploadedFile"
-//               value={formData.uploadedFile}
-//               onChange={handleChange}
-//               className="block w-full p-2 bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 "
-//             />
-
-//             {/* LABEL FOR MESSAGE */}
-//             <label
-//               htmlFor="message"
-//               className="block mb-2 text-sm font-medium text-pink-800"
-//             >
-//               Your message
-//             </label>
-
-//             {/* MESSAGE INPUT */}
-//             <textarea
-//               type="text"
-//               id="message"
-//               name="message"
-//               value={formData.message}
-//               onChange={handleChange}
-//               placeholder="Tell us about yourself..."
-//               rows="4"
-//               className="block p-2.5 w-full text-sm bg-pink-100 border border-pink-500 text-pink-800 rounded-2xl focus:ring-pink-900 focus:border-pink-900"
-//             ></textarea>
-
-//             {/* SUBMIT BUTTON */}
-//             <button className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full absolute my-5">
-//               Send Message
-//             </button>
-//           </form>
-//         </div>
-
-//         <div className="formText py-4 lg:px-8 lg:py-[120px] order-1 lg:order-2">
-//           <p>
-//             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-//             ipsa rerum repudiandae omnis dicta. quod!
-//           </p>
-//           <p>
-//             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
-//             ullam!
-//           </p>
-//         </div>
-//       </section>
-//     </>
-//   );
-// }
