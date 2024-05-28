@@ -2,7 +2,7 @@ import LinkCard from "../link-card/LinkCard";
 
 export default function WhatWeDo() {
   return (
-    <section className="bg-pink-700 text-pink-200 sm:p-10 p-1 ">
+    <section className="bg-pink-700 text-pink-200 sm:p-10 p-1">
       <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl mb-20">
         WHAT WE DO
       </h2>
@@ -17,7 +17,7 @@ export default function WhatWeDo() {
       <p>
         At Pink Piranha, we understand that the success of any event lies in the
         people behind it. Our mission is to provide you with a diverse and
-        skilled team that caters to your specific needs, whether it's managing
+        skilled team that caters to your specific needs, whether it`s managing
         entries with efficiency, crafting engaging atmospheres, or adding a
         touch of creativity with unique talents like face painting and
         performances.
