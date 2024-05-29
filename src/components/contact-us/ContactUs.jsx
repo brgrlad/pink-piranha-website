@@ -40,7 +40,7 @@ export default function ContactUs() {
   };
 
   return (
-    <>
+    <section className=" bg-pink-200 p-10">
       {showModal && (
         <Modal
           title={`Thank you!`}
@@ -48,10 +48,11 @@ export default function ContactUs() {
           onClose={() => setShowModal(false)}
         />
       )}
-      <section className="grid grid-cols-1 lg:grid-cols-2 p-5 md:p-10 bg-pink-200">
-        <div className="formWrapper w-[100%] flex flex-col order-2 lg:order-1">
-          <h2 className="text-4xl md:text-6xl py-5">CONTACT US!</h2>
 
+      <h2 className="text-4xl md:text-6xl">CONTACT US!</h2>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 py-5">
+        <div className="formWrapper w-[100%] flex flex-col order-2 lg:order-1 justify-items-end">
           <form className="mb-20" onSubmit={(e) => handleSubmit(e)}>
             <div className="mb-5">
               <label
@@ -122,13 +123,14 @@ export default function ContactUs() {
               rows="4"
               className="block p-2.5 w-full text-sm bg-pink-100 border border-pink-500 text-pink-800 rounded-2xl focus:ring-pink-900 focus:border-pink-900"
             ></textarea>
+
             <button className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full absolute my-5">
               Send Message
             </button>
           </form>
         </div>
 
-        <div className="formText py-4 lg:px-8 lg:py-[120px] order-1 lg:order-2">
+        <div className="formText py-4 lg:px-8  order-1 lg:order-2">
           <h3>WE ARE HERE TO HELP</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
@@ -139,17 +141,18 @@ export default function ContactUs() {
             ullam!
           </p>
 
-          <ContactInfo
-            icon={"/img/icons/phone.svg"}
-            contactInfo={"+353 1 384 3838"}
-          />
-
-          <ContactInfo
-            icon={"/img/icons/email.svg"}
-            contactInfo={"hello@pinkpiranha.ie"}
-          />
+          <div className="contactInfoWrapper">
+            <ContactInfo
+              icon={"/img/icons/phone.svg"}
+              contactInfo={"+353 1 384 3838"}
+            />
+            <ContactInfo
+              icon={"/img/icons/email.svg"}
+              contactInfo={"hello@pinkpiranha.ie"}
+            />
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
