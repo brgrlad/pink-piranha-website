@@ -57,13 +57,15 @@ p {
 
 .section-divider {
   background-image: url(../../public/img/waves/svg-2.png);
+
   /* height: 200px; */
 }
 
 .hero {
-  background-image: url(../../public/hero.jpeg);
+  background-image: url(../../public/img/photos/crowd03.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
   min-height: 100vh;
 }
 

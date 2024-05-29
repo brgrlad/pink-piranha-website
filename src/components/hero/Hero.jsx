@@ -8,7 +8,7 @@ import bubbleTrio from "../../../public/img/bubbles/bubble_trio_1.png";
 export default function Hero() {
   return (
     <section
-      className="hero bg-pink-900 text-pink-200 md:px-10 px-5 py-10 flex"
+      className="hero bg-pink-900 text-pink-200 md:px-10 px-5 py-10 flex "
       id="home"
     >
       <Header />
