@@ -45,7 +45,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className=" bg-pink-200 md:px-10 px-5 py-10">
+    <section className=" bg-pink-200 md:px-10 px-5 py-10" id="contact-us">
       {/* MODAL IS SHOWN UPON SUBMIT */}
       {showModal && (
         <Modal

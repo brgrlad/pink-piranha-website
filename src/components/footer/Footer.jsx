@@ -8,7 +8,7 @@ Image;
 
 export default function Footer() {
   return (
-    <footer className="mx-auto md:px-10 px-5 py-10 max-h-[100vh]">
+    <footer className="md:px-10 px-5 bg-dark-pink">
       <div className="flex md:flex-row flex-col justify-between items-center">
         <Image src={logo} alt="pink piranha logo" className="w-[50%] my-5" />
 

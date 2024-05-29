@@ -7,7 +7,10 @@ import bubbleTrio from "../../../public/img/bubbles/bubble_trio_1.png";
 
 export default function Hero() {
   return (
-    <section className="hero bg-pink-900 text-pink-200 md:px-10 px-5 py-10 flex">
+    <section
+      className="hero bg-pink-900 text-pink-200 md:px-10 px-5 py-10 flex"
+      id="home"
+    >
       <Header />
 
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">

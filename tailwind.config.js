@@ -10,6 +10,12 @@ module.exports = {
       fontFamily: {
         custom: ["Aventine"],
       },
+      colors: {
+        "light-pink": "#ffd6e6",
+        "medium-pink": "#ff77af",
+        "dark-pink": "#be2555",
+        white: "white: #fffefe",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -3,9 +3,9 @@ import waves from "../../../public/img/waves/svg-2.png";
 import bubbleTrio from "../../../public/img/bubbles/bubble_trio_1.png";
 import Image from "next/image";
 
-export default function ServicesBento() {
+export default function PhotoGallery() {
   return (
-    <section className="relative">
+    <section className="relative" id="photo-gallery">
       <Image
         src={waves}
         alt="section divider: an illustration of sea waves in shades of pink"

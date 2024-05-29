@@ -14,7 +14,7 @@ export default function Menu() {
             content={
               "We're currently hiring for a variety of positions! Send us your CV!  "
             }
-            link="/work-with-us"
+            link="/#contact-us"
             height="130px"
           />
           <LinkCard
@@ -22,14 +22,14 @@ export default function Menu() {
             content={
               "Need a quote, want to discuss your ideas? We're be happy to help! "
             }
-            link="/work-with-us"
+            link="#contact-us"
             height="130px"
           />
         </div>
         <div className="right-column md:order-2 order-1">
           <ul className="h-full pb-10 text-right flex flex-col justify-between text-2xl text-pink-100 font-bold">
             <li className="py-2">
-              <Link href="/" className="rounded-xl ">
+              <Link href="/#home" className="rounded-xl ">
                 HOME
               </Link>
             </li>
@@ -38,12 +38,12 @@ export default function Menu() {
               <Link href="/meet-the-team"> MEET THE TEAM </Link>
             </li>
             <li className="py-2">
-              <Link href="/what-we-do"> WHAT WE DO</Link>
+              <Link href="/#what-we-do"> WHAT WE DO</Link>
             </li>
 
             <li className="flex justify-end py-2">
               INSTAGRAM
-              <Link href="www.google.com">
+              <Link href="https://www.instagram.com/pinkpiranha.agency/">
                 <svg
                   className="h-8 ml-2 "
                   viewBox="0 0 24 24"

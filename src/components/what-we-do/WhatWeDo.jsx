@@ -3,7 +3,10 @@ import ServicesCard from "../services-card/ServicesCard";
 
 export default function WhatWeDo() {
   return (
-    <section className="bg-pink-800 text-pink-200 py-10 md:px-10 px-5 rounded-3xl">
+    <section
+      className="bg-pink-800 text-pink-200 py-10 md:px-10 px-5 rounded-3xl"
+      id="what-we-do"
+    >
       <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl my-5">
         WHAT WE DO
       </h2>

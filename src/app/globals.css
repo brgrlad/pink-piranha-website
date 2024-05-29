@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Aventine";
   src: url("/fonts/Aventine.otf") format("opentype");
@@ -10,13 +14,12 @@
 }
 
 :root {
-  --light-pink: #ffd6e6;
-  --medium-pink: #ff77af;
-  --dark-pink: #be2555;
-  --white: #fffefe;
-  background-color: var(--light-pink);
-  color: var(--dark-pink);
   max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a:hover {
+  opacity: 0.6;
 }
 
 h1,
@@ -35,7 +38,6 @@ p {
 /* logo */
 h1 {
   font-size: 3rem;
-  border: 1px solid pink;
 }
 
 /* hero text */
@@ -45,7 +47,7 @@ h2 {
 
 /* used for cards with link */
 h3 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 p {
@@ -69,7 +71,6 @@ footer {
   background-image: url(../../public/footer-image.avif);
   background-size: cover;
   background-repeat: no-repeat;
-  /* height: 100vh; */
 }
 
 @layer utilities {

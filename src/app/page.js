@@ -1,4 +1,4 @@
-import ServicesBento from "../components/services-bento/ServicesBento";
+import ServicesBento from "../components/photo-gallery/PhotoGallery";
 
 import WelcomeCard from "@/components/welcome-card/WelcomeCard";
 import WhatWeDo from "@/components/what-we-do/WhatWeDo";
