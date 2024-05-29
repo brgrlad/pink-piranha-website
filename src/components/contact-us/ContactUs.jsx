@@ -3,6 +3,7 @@ import { useReducer, useState } from "react";
 import Modal from "@/components/about-card/modal/Modal";
 import ContactInfo from "../contact-info/ContactInfo";
 
+// INITIAL FORM DATA
 const initialFormData = {
   firstName: "",
   emailAddress: "",
@@ -10,6 +11,7 @@ const initialFormData = {
   message: "",
 };
 
+// DISPATCH FORM ACTIONS
 const formReducer = (state, action) => {
   switch (action.type) {
     case "SET_FIELD":
@@ -25,14 +27,17 @@ const formReducer = (state, action) => {
 };
 
 export default function ContactUs() {
+  // STATES FOR FORM AND MODAL
   const [formData, dispatch] = useReducer(formReducer, initialFormData);
   const [showModal, setShowModal] = useState(false);
 
+  // HANDLE INPUT CHANGE
   const handleChange = (e) => {
     const { name, value } = e.target;
     dispatch({ type: "SET_FIELD", fieldName: name, value });
   };
 
+  // HANDLE FORM SUBMIT: SEND DATA TO BACKEND, SHOW CONFIRMATION MODAL IN THE UI AND RESET FORM
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowModal(true);
@@ -40,7 +45,8 @@ export default function ContactUs() {
   };
 
   return (
-    <section className=" bg-pink-200 p-10">
+    <section className=" bg-pink-200 md:px-10 px-5 py-10">
+      {/* MODAL IS SHOWN UPON SUBMIT */}
       {showModal && (
         <Modal
           title={`Thank you!`}
@@ -48,12 +54,15 @@ export default function ContactUs() {
           onClose={() => setShowModal(false)}
         />
       )}
-
+      {/* PAGE TITLE */}
       <h2 className="text-4xl md:text-6xl">CONTACT US!</h2>
 
+      {/* MAIN WRAPPER FOR THE FORM SECTION  */}
       <div className="grid grid-cols-1 lg:grid-cols-2 py-5">
-        <div className="formWrapper w-[100%] flex flex-col order-2 lg:order-1 justify-items-end">
+        {/* LEFT SIDE COL - FORM FIELDS */}
+        <div className="formWrapper w-[100%] flex flex-col justify-items-end">
           <form className="mb-20" onSubmit={(e) => handleSubmit(e)}>
+            {/* FIRST NAME FIELD */}
             <div className="mb-5">
               <label
                 htmlFor="firstName"
@@ -72,6 +81,7 @@ export default function ContactUs() {
               />
             </div>
 
+            {/* PHONE NUMBER FIELD */}
             <div className="mb-5">
               <label
                 htmlFor="phoneNumber"
@@ -89,6 +99,7 @@ export default function ContactUs() {
               />
             </div>
 
+            {/* EMAIL ADDRESS FIELD */}
             <div className="mb-5">
               <label
                 htmlFor="emailAddress"
@@ -106,6 +117,7 @@ export default function ContactUs() {
               />
             </div>
 
+            {/* MESSAGE FIELD */}
             <label
               htmlFor="message"
               className="block mb-2 text-sm font-medium text-pink-800"
@@ -124,13 +136,15 @@ export default function ContactUs() {
               className="block p-2.5 w-full text-sm bg-pink-100 border border-pink-500 text-pink-800 rounded-2xl focus:ring-pink-900 focus:border-pink-900"
             ></textarea>
 
+            {/* SUBMIT BUTTON */}
             <button className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full absolute my-5">
               Send Message
             </button>
           </form>
         </div>
 
-        <div className="formText py-4 lg:px-8  order-1 lg:order-2">
+        {/* RIGHT SIDE COL - TEXT AND CONTACT INFO */}
+        <div className="formText py-4 lg:px-8">
           <h3>WE ARE HERE TO HELP</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
@@ -141,16 +155,14 @@ export default function ContactUs() {
             ullam!
           </p>
 
-          <div className="contactInfoWrapper">
-            <ContactInfo
-              icon={"/img/icons/phone.svg"}
-              contactInfo={"+353 1 384 3838"}
-            />
-            <ContactInfo
-              icon={"/img/icons/email.svg"}
-              contactInfo={"hello@pinkpiranha.ie"}
-            />
-          </div>
+          <ContactInfo
+            icon={"/img/icons/phone.svg"}
+            contactInfo={"+353 1 384 3838"}
+          />
+          <ContactInfo
+            icon={"/img/icons/email.svg"}
+            contactInfo={"hello@pinkpiranha.ie"}
+          />
         </div>
       </div>
     </section>

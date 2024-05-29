@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ServicesBento() {
   return (
-    <section className="py-5 relative">
+    <section className="relative">
       <Image
         src={waves}
         alt="section divider: an illustration of sea waves in shades of pink"
@@ -19,7 +19,7 @@ export default function ServicesBento() {
       />
 
       <div
-        className="contentWrapper  text-pink-800 bg-pink-400 p-8 -mt-[20px] rounded-3xl"
+        className="contentWrapper  text-pink-800 md:px-10 px-5 -mt-[20px] rounded-3xl py-10"
         style={{ backgroundColor: "rgb(254 118 175)" }}
       >
         <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl text-pink-200 ml-2">
