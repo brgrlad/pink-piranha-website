@@ -3,7 +3,7 @@ import ServicesCard from "../services-card/ServicesCard";
 
 export default function WhatWeDo() {
   return (
-    <section className="bg-pink-700 text-pink-200 sm:p-10 p-1">
+    <section className="bg-pink-800 text-pink-200 sm:p-10 p-8  rounded-3xl">
       <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl my-5">
         WHAT WE DO
       </h2>
@@ -16,10 +16,10 @@ export default function WhatWeDo() {
       <p>
         Join us on a journey where events are more than just gatherings — they
         are immersive, memorable experiences crafted by the expert hands of
-        Ireland’s event industry professionals.
+        Ireland`s event industry professionals.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-y-3 gap-x-3 sm-gap-x-0 py-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-3 gap-x-3 sm-gap-x-0 py-5">
         <ServicesCard
           title={"ENTRY MANAGEMENT"}
           content={[
@@ -35,7 +35,7 @@ export default function WhatWeDo() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="size-[50px] my-5"
+              className="size-[50px] my-5 self-center"
             >
               <path
                 stroke-linecap="round"
@@ -61,7 +61,7 @@ export default function WhatWeDo() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="size-[50px] my-5"
+              className="size-[50px] my-5 self-center"
             >
               <path
                 stroke-linecap="round"
@@ -87,7 +87,7 @@ export default function WhatWeDo() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="size-[50px] my-5"
+              className="size-[50px] my-5 self-center"
             >
               <path
                 stroke-linecap="round"
@@ -112,7 +112,7 @@ export default function WhatWeDo() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="size-[50px] my-5"
+              className="size-[50px] my-5 self-center"
             >
               <path
                 stroke-linecap="round"
