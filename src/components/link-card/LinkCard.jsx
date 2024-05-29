@@ -6,13 +6,14 @@ export default function LinkCard({
   content,
   link,
   width = "100%",
-  height = "200px",
+  height = "fit-content",
   marginBottom = "20px",
 }) {
   return (
     <div
       style={{ width, height, marginBottom }}
-      className={`py-1 md:py-2 px-4 bg-pink-900 rounded-xl text-pink-200 flex flex-col justify-center`}
+      // className={`py-2 md:py-4 px-4 bg-pink-900 rounded-xl text-pink-200 flex flex-col justify-center`}
+      className={` p-4 bg-pink-900 rounded-xl text-pink-200 flex flex-col justify-around`}
     >
       <h3 className="mb-1 md:text-3xl text-lg">{title}</h3>
 
@@ -21,7 +22,7 @@ export default function LinkCard({
       <Link
         onClick={onClick}
         href={`${link}`}
-        className="flex justify-end items-center w-full h-3 "
+        className="flex justify-end items-center w-full text-xs"
       >
         Know more
         <svg

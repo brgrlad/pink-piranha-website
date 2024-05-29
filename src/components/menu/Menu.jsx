@@ -16,7 +16,6 @@ export default function Menu({ setIsClicked }) {
               "We're currently hiring for a variety of positions! Send us your CV!"
             }
             link="/#contact-us"
-            height="130px"
           />
 
           <LinkCard
@@ -25,7 +24,6 @@ export default function Menu({ setIsClicked }) {
               "Need a quote, want to discuss your ideas? We're be happy to help! "
             }
             link="#contact-us"
-            height="130px"
           />
         </div>
         <div className="right-column md:order-2 order-1">

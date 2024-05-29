@@ -67,11 +67,11 @@ p {
   min-height: 100vh;
 }
 
-footer {
+/* footer {
   background-image: url(../../public/footer-image.avif);
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 @layer utilities {
   .text-balance {
