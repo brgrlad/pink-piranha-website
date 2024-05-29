@@ -22,11 +22,11 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <Image
+      {/* <Image
         src={bubbleTrio}
         alt="bubles"
         className="w-[30%] absolute top-[70%] right-[1%] z-40"
-      />
+      /> */}
     </section>
   );
 }
