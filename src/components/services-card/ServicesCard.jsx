@@ -1,11 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ServicesCard({
   title,
+  iconTest,
   content,
   icon,
   width = "100%",
-  height = "380px",
+  height = "400px",
   marginBottom = "20px",
 }) {
   return (
@@ -16,11 +18,13 @@ export default function ServicesCard({
       {icon}
 
       {/* <h3 className="mb-1 text-[22px]">{title}</h3> */}
-      <p className="mb-5 text-[18px] font-bold">{title}</p>
+      <p className="mb-5 text-[16px] font-bold border-[1px] rounded-3xl p-1 bg-pink-200 text-pink-800">
+        {title}
+      </p>
       <ul className="text-sm">
         {content.map((service) => (
           <li key={service}>
-            <p className="mb-5">{service}</p>
+            <p className="mb-4 ">✓ {service}</p>
           </li>
         ))}
       </ul>
