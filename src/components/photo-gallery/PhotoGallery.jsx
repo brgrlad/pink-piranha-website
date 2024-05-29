@@ -19,7 +19,7 @@ export default function PhotoGallery() {
       />
 
       <div
-        className="contentWrapper  text-pink-800 md:px-10 px-5 -mt-[20px] rounded-3xl py-10"
+        className="contentWrapper  text-pink-800 md:px-10 px-5 -mt-[20px] rounded-xl py-10"
         style={{ backgroundColor: "rgb(254 118 175)" }}
       >
         <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl text-pink-200 ml-2">
@@ -27,32 +27,32 @@ export default function PhotoGallery() {
         </h2>
 
         <p className="ml-2">Fresh snaps from our latest events!</p>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-5">
           <Image
             src={bentoImage}
             alt="placeholder"
-            className="aspect-square col-span-1 object-cover rounded-3xl"
+            className="aspect-square col-span-1 object-cover rounded-xl"
           />
           <Image
             src={bentoImage}
             alt="placeholder"
-            className="aspect-square col-span-1 object-cover rounded-3xl"
+            className="aspect-square col-span-1 object-cover rounded-xl"
           />
 
           <Image
             src={bentoImage}
             alt="placeholder"
-            className="aspect-square col-span-1 object-cover rounded-3xl"
+            className="aspect-square col-span-1 object-cover rounded-xl"
           />
           <Image
             src={bentoImage}
             alt="placeholder"
-            className="aspect-square col-span-1 object-cover rounded-3xl"
+            className="aspect-square col-span-1 object-cover rounded-xl"
           />
           <Image
             src={bentoImage}
             alt="placeholder"
-            className="col-span-2 aspect-[2/1] object-cover rounded-3xl"
+            className="col-span-2 aspect-[2/1] object-cover rounded-xl"
           />
         </div>
       </div>

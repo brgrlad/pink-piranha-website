@@ -4,7 +4,7 @@ import sampleImage from "../../../../public/gradients/2.jpg";
 
 export default function MeetTheTeam() {
   return (
-    <section className=" p-5 md:p-10">
+    <section className=" p-5 md:p-10" id="photos">
       <h2 className="text-4xl md:text-6xl py-5">MEET THE TEAM</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem

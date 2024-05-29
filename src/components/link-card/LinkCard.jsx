@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function LinkCard({
+  onClick,
   title,
   content,
   link,
@@ -18,6 +19,7 @@ export default function LinkCard({
       <p className="mb-1 text-sm ">{content}</p>
 
       <Link
+        onClick={onClick}
         href={`${link}`}
         className="flex justify-end items-center w-full h-3 "
       >

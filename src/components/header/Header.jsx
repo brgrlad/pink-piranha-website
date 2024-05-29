@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className="fixed overflow-x-hidden left-0 top-0 flex justify-between items-start w-full p-5 z-50 ">
-      <Link href="/">
+      <Link href="/#home">
         <Image src={logo} width={100} height={100} alt="Pink Piranha logo" />
       </Link>
 
@@ -31,7 +31,7 @@ export default function Header() {
         {isClicked ? "CLOSE" : "MENU"}
       </button>
 
-      {isClicked && <Menu />}
+      {isClicked && <Menu setIsClicked={setIsClicked} />}
     </header>
   );
 }

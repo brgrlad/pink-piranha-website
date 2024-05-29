@@ -18,6 +18,7 @@ export default function Footer() {
             width="60%"
             marginBottom="20px"
             content={"Lorem ipsum dolor sit amet,minimaautem aspernatur?"}
+            link="/#contact-us"
           />
           <LinkCard
             title={"REACH OUT!"}
@@ -26,6 +27,7 @@ export default function Footer() {
             content={
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore "
             }
+            link="/#contact-us"
           />
         </div>
       </div>
