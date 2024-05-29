@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function WelcomeCard() {
   return (
-    <section className="bg-pink-200 md:px-10 px-5 rounded-3xl relative">
+    <section className="bg-pink-200 md:px-10 px-5 rounded-3xl relative z-10">
       <div className="grid max-w-screen-xl py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 h-auto">
         <div className="mr-auto place-self-center lg:col-span-7">
           <h2 className=" text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl">
