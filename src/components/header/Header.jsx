@@ -17,7 +17,7 @@ export default function Header() {
       <Link href="work-with-us">
         <button
           type="button"
-          className=" text-dark-pink bg-pink-300 border-transparent mt-[-35px] focus:outline-none focus:ring-4  font-medium rounded-full text-sm px-8 py-1 text-center mb-2 h-10 flex items-end"
+          className=" text-dark-pink border-dark-pink bg-light-pink border-transparent border-2 mt-[-35px] focus:outline-none focus:ring-4  font-medium rounded-full text-sm px-8 py-1 text-center mb-2 h-10 flex items-end"
         >
           EVENT STAFF NEEDED: COME WORK WITH US!
         </button>
@@ -25,7 +25,7 @@ export default function Header() {
 
       <button
         type="button"
-        className="shadow-3xl border-2 border-pink-700 text-pink-700 bg-pink-300 font-bold rounded-full text-sm  px-8 py-2 text-center mb-2 z-50"
+        className="shadow-3xl border-2 border-dark-pink text-dark-pink bg-light-pink font-bold rounded-full text-sm  px-8 py-2 text-center mb-2 z-50"
         onClick={() => setIsClicked((prev) => !isClicked)}
       >
         {isClicked ? "CLOSE" : "MENU"}
