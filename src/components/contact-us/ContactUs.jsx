@@ -46,9 +46,10 @@ export default function ContactUs() {
 
   return (
     <section
-      className=" bg-light-pink text-dark-pink md:px-10 px-5 p-20"
+      className="bg-light-pink text-dark-pink md:px-10 px-5 p-20"
       id="contact-us"
     >
+      <div className="contact-divier"></div>
       {/* MODAL IS SHOWN UPON SUBMIT */}
       {showModal && (
         <Modal
@@ -58,7 +59,7 @@ export default function ContactUs() {
         />
       )}
       {/* PAGE TITLE */}
-      <h2 className="text-4xl md:text-6xl">CONTACT US!</h2>
+      <h2 className="text-4xl md:text-6xl mt-10">CONTACT US!</h2>
 
       {/* MAIN WRAPPER FOR THE FORM SECTION  */}
       <div className="grid grid-cols-1 lg:grid-cols-2 py-5">
