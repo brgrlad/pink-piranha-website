@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-light-pink text-dark-pink font-sans">
-      <div className="mx-auto w-full max-w-screen-xl p-8 py- lg:py-8">
+      <div className="mx-auto w-full  p-8 ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
