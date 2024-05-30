@@ -17,7 +17,7 @@ export default function Header() {
       <Link href="work-with-us">
         <button
           type="button"
-          className=" text-pink-800 bg-pink-300 border-transparent mt-[-35px] focus:outline-none focus:ring-4  font-medium rounded-full text-sm px-8 py-1 text-center mb-2 h-10 flex items-end"
+          className=" text-dark-pink bg-pink-300 border-transparent mt-[-35px] focus:outline-none focus:ring-4  font-medium rounded-full text-sm px-8 py-1 text-center mb-2 h-10 flex items-end"
         >
           EVENT STAFF NEEDED: COME WORK WITH US!
         </button>

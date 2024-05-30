@@ -55,7 +55,7 @@ export default function WorkWithUs() {
             <div className="mb-5">
               <label
                 htmlFor="firstName"
-                className="mb-2 text-sm font-medium text-pink-800"
+                className="mb-2 text-sm font-medium text-dark-pink"
               >
                 Name
               </label>
@@ -66,14 +66,14 @@ export default function WorkWithUs() {
                 value={formData.firstName}
                 onChange={handleChange}
                 required
-                className="block bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 w-full p-2.5"
+                className="block bg-light-pink border border-medium-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink w-full p-2.5"
               />
             </div>
 
             <div className="mb-5">
               <label
                 htmlFor="emailAddress"
-                className="block mb-2 text-sm font-medium text-pink-800"
+                className="block mb-2 text-sm font-medium text-dark-pink"
               >
                 E-mail Address
               </label>
@@ -83,11 +83,11 @@ export default function WorkWithUs() {
                 name="emailAddress"
                 value={formData.emailAddress}
                 onChange={handleChange}
-                className="bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 block w-full p-2.5"
+                className="bg-light-pink border border-medium-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink block w-full p-2.5"
               />
             </div>
             <label
-              className="block mb-2 text-sm font-medium text-pink-800"
+              className="block mb-2 text-sm font-medium text-dark-pink"
               htmlFor="file_input"
             >
               Upload file or CV (if applicable)
@@ -98,11 +98,11 @@ export default function WorkWithUs() {
               name="uploadedFile"
               value={formData.uploadedFile}
               onChange={handleChange}
-              className="block w-full p-2 bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 "
+              className="block w-full p-2 bg-light-pink border border-medium-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink "
             />
             <label
               htmlFor="message"
-              className="block mb-2 text-sm font-medium text-pink-800"
+              className="block mb-2 text-sm font-medium text-dark-pink"
             >
               Your message
             </label>
@@ -115,9 +115,9 @@ export default function WorkWithUs() {
               required
               placeholder="Tell us about yourself..."
               rows="4"
-              className="block p-2.5 w-full text-sm bg-pink-100 border border-pink-500 text-pink-800 rounded-2xl focus:ring-pink-900 focus:border-pink-900"
+              className="block p-2.5 w-full text-sm bg-light-pink border border-medium-pink text-dark-pink rounded-2xl focus:ring-dark-pink focus:border-dark-pink"
             ></textarea>
-            <button className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full absolute my-5">
+            <button className="bg-medium-pink hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full absolute my-5">
               Send Message
             </button>
           </form>

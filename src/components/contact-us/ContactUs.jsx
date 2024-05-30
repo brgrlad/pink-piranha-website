@@ -46,7 +46,7 @@ export default function ContactUs() {
 
   return (
     <section
-      className=" bg-light-pink text-dark-pink md:px-10 px-5 p-20clea"
+      className=" bg-light-pink text-dark-pink md:px-10 px-5 p-20"
       id="contact-us"
     >
       {/* MODAL IS SHOWN UPON SUBMIT */}
@@ -69,7 +69,7 @@ export default function ContactUs() {
             <div className="mb-5">
               <label
                 htmlFor="firstName"
-                className="mb-2 text-sm font-medium text-pink-800"
+                className="mb-2 text-sm font-medium text-dark-pink"
               >
                 Name
               </label>
@@ -80,7 +80,7 @@ export default function ContactUs() {
                 value={formData.firstName}
                 onChange={handleChange}
                 required
-                className="block bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 w-full p-2.5"
+                className="block bg-light-pink border border-medium-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink w-full p-2.5"
               />
             </div>
 
@@ -88,7 +88,7 @@ export default function ContactUs() {
             <div className="mb-5">
               <label
                 htmlFor="phoneNumber"
-                className="mb-2 text-sm font-medium text-pink-800"
+                className="mb-2 text-sm font-medium text-dark-pink"
               >
                 Phone Number
               </label>
@@ -98,7 +98,7 @@ export default function ContactUs() {
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                className="block bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 w-full p-2.5"
+                className="block bg-light-pink border border-medium-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink w-full p-2.5"
               />
             </div>
 
@@ -106,7 +106,7 @@ export default function ContactUs() {
             <div className="mb-5">
               <label
                 htmlFor="emailAddress"
-                className="block mb-2 text-sm font-medium text-pink-800"
+                className="block mb-2 text-sm font-medium text-dark-pink"
               >
                 E-mail Address
               </label>
@@ -116,14 +116,14 @@ export default function ContactUs() {
                 name="emailAddress"
                 value={formData.emailAddress}
                 onChange={handleChange}
-                className="bg-pink-100 border border-pink-500 text-pink-800 text-sm rounded-2xl focus:ring-pink-900 focus:border-pink-900 block w-full p-2.5"
+                className="bg-light-pink border border-medium-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink block w-full p-2.5"
               />
             </div>
 
             {/* MESSAGE FIELD */}
             <label
               htmlFor="message"
-              className="block mb-2 text-sm font-medium text-pink-800"
+              className="block mb-2 text-sm font-medium text-dark-pink"
             >
               Your message
             </label>
@@ -136,11 +136,11 @@ export default function ContactUs() {
               required
               placeholder="Tell us about yourself..."
               rows="4"
-              className="block p-2.5 w-full text-sm bg-pink-100 border border-pink-500 text-pink-800 rounded-2xl focus:ring-pink-900 focus:border-pink-900"
+              className="block p-2.5 w-full text-sm bg-light-pink border border-medium-pink text-dark-pink rounded-2xl focus:ring-dark-pink focus:border-dark-pink"
             ></textarea>
 
             {/* SUBMIT BUTTON */}
-            <button className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full absolute my-5">
+            <button className="bg-dark-pink text-light-pink hover:opacity-85 text-white font-bold py-2 px-4 rounded-full absolute my-5">
               Send Message
             </button>
           </form>
