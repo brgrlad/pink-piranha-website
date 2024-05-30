@@ -21,7 +21,7 @@ export default function Menu({ setIsClicked }) {
           <LinkCard
             title={"REACH OUT"}
             content={
-              "Need a quote, want to discuss your ideas? We're be happy to help! "
+              "Need a quote, want to discuss your ideas? We're happy to help! "
             }
             link="#contact-us"
           />
