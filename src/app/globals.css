@@ -55,6 +55,13 @@ p {
   font-size: 20px;
 }
 
+.what-we-do {
+  background-image: url(../../public/img/backgrounds/sssquiggly-4.svg);
+  background-size: cover;
+  padding: 20px;
+  border-radius: 20px;
+}
+
 .section-divider {
   background-image: url(../../public/img/waves/svg-2.png);
 

@@ -7,7 +7,7 @@ export default function WhatWeDo() {
       className="bg-dark-pink text-light-pink py-10 md:px-10 px-5 rounded-3xl"
       id="what-we-do"
     >
-      <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl my-5">
+      <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl my-5 what-we-do">
         WHAT WE DO
       </h2>
       <p>
