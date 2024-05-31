@@ -70,7 +70,7 @@ h3 {
 /*  WHAT WE DO WAVY BACKGROUND BEHIND CARDS*/
 #what-we-do {
   background-image: url(../../public/img/backgrounds/sssquiggly.svg);
-  background-size: cover;
+  background-position: left 200px;
 }
 
 @layer utilities {

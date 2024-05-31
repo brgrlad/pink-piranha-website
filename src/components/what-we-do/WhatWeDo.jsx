@@ -10,8 +10,8 @@ export default function WhatWeDo() {
       id="what-we-do"
     >
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+        <div>
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
             WHAT WE DO
           </h2>
           <p className="mb-4">
@@ -26,44 +26,19 @@ export default function WhatWeDo() {
             hands of Ireland`s event industry professionals.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-8">
+        <div className="grid grid-cols-2 gap-4 mt-10">
           <Image
             src={staffPhoto1}
-            alt="Event staff"
+            alt="Pink Piranha staff member placing wristbands on a festival attendee"
             className="w-full rounded-lg"
           />
           <Image
             src={staffPhoto2}
-            alt="Event staff"
+            alt="Pink Piranha staff with a megaphone, smiling at the camera"
             className="mt-4 w-full lg:mt-10 rounded-lg"
           />
-          {/* <img
-            className="w-full rounded-lg"
-            src={staffPhoto1}
-            alt="office content 1"
-          />
-          <img
-            className="mt-4 w-full lg:mt-10 rounded-lg"
-            src={staffPhoto2}
-            alt="office content 2"
-          /> */}
         </div>
       </div>
-
-      {/* <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl my-5 what-we-do pt-[60px]">
-        WHAT WE DO
-      </h2>
-      <p>
-        No event is too big or too small for us. From corporate functions to
-        lively festivals, intimate gatherings to grand celebrations, we have the
-        expertise and passion to tailor our recruitment services to suit your
-        unique requirements.
-      </p>
-      <p>
-        Join us on a journey where events are more than just gatherings — they
-        are immersive, memorable experiences crafted by the expert hands of
-        Ireland`s event industry professionals.
-      </p> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-3 gap-x-3 sm-gap-x-0 py-5 ">
         <ServicesCard
