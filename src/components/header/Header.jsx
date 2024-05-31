@@ -19,7 +19,7 @@ export default function Header() {
           type="button"
           className=" text-dark-pink border-dark-pink bg-light-pink border-transparent border-2 mt-[-35px] focus:outline-none focus:ring-4  font-medium rounded-full text-sm px-8 py-1 text-center mb-2 h-10 flex items-end"
         >
-          EVENT STAFF NEEDED: COME WORK WITH US!
+          WE`RE HIRING EVENT STAFF!
         </button>
       </Link>
 

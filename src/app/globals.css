@@ -81,6 +81,18 @@ p {
   margin-top: -40px;
 }
 
+.dividerOne {
+  background-image: url(../../public/img/waves/single.png);
+  background-color: transparent;
+
+  position: top;
+  background-size: cover;
+
+  /* rotate: 180deg; */
+
+  height: 200px;
+}
+
 .section-divider {
   background-image: url(../../public/img/waves/svg-2.png);
 

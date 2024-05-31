@@ -5,12 +5,13 @@ import staff04 from "../../../public/img/photos/staff04.jpg";
 import staff05 from "../../../public/img/photos/staff05.jpg";
 
 import waves from "../../../public/img/waves/svg-2.png";
+import wavesInverted from "../../../public/img/waves/dark-wave.png";
 import bubbleTrio from "../../../public/img/bubbles/bubble_trio_1.png";
 import Image from "next/image";
 
 export default function PhotoGallery() {
   return (
-    <section className="relative" id="photo-gallery">
+    <section className="relative rounded-3xl shadow-lg" id="photo-gallery">
       <Image
         src={waves}
         alt="section divider: an illustration of sea waves in shades of pink"
@@ -60,29 +61,4 @@ export default function PhotoGallery() {
       </div>
     </section>
   );
-}
-
-{
-  /* <div className="grid grid-cols-3 gap-10 rounded shadow-md">
-        <div className="flex items-center justify-center h-48 bg-blue-500 text-white">
-          1
-        </div>
-        <div className="flex items-center justify-center h-12"></div>
-        <div className="flex items-center justify-center h-12"></div>
-        <div className="flex items-center justify-center h-48 bg-blue-500 text-white">
-          4
-        </div>
-        <div className="flex items-center justify-center h-96 col-span-2 bg-blue-500 text-white">
-          5
-        </div>
-        <div className="flex items-center justify-center h-24 bg-blue-500 text-white">
-          6
-        </div>
-        <div className="flex items-center justify-center h-24 bg-blue-500 text-white">
-          7
-        </div>
-        <div className="flex items-center justify-center h-24 bg-blue-500 text-white">
-          8
-        </div>
-      </div> */
 }

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-light-pink text-dark-pink font-sans">
+    <footer className="bg-dark-pink text-light-pink font-sans -mt-[50px] pt-[50px]">
       <div className="mx-auto w-full  p-8 ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
