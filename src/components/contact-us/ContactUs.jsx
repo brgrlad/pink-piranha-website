@@ -148,15 +148,24 @@ export default function ContactUs() {
         </div>
 
         {/* RIGHT SIDE COL - TEXT AND CONTACT INFO */}
-        <div className="formText py-4 lg:px-8">
-          <h3>WE ARE HERE TO HELP</h3>
+        <div className="formText py-4 lg:px-8 text-dark-pink">
+          <h3 className="text-2xl mb-14">WE ARE HERE TO HELP</h3>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            ipsa rerum repudiandae omnis dicta. quod!
+            Whether you`re looking for
+            <span className="font-bold"> event staffing </span>for your next
+            event, get a <span className="font-bold"> price estimate </span> on
+            our services, <span className="font-bold">book a consultation</span>
+            , or just want to chat about your ideas, we are happy to assist you
+            with your enquires.
           </p>
+
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt,
-            ullam!
+            Just{" "}
+            <span className="border-[1px] border-dark-pink rounded-3xl px-3 mr-1">
+              drop us a line!
+            </span>
+            and we promise to get back to you as soon as possible.
           </p>
 
           <ContactInfo
