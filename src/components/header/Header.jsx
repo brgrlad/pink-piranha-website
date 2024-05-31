@@ -1,9 +1,9 @@
 "use client";
+import { useState } from "react";
+import Link from "next/link";
 import logo from "../../../public/img/pink-piranha-logo.png";
 import Image from "next/image";
 import Menu from "../menu/Menu";
-import { useState } from "react";
-import Link from "next/link";
 
 export default function Header() {
   let [isClicked, setIsClicked] = useState(false);

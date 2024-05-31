@@ -1,6 +1,6 @@
 "use client";
 import { useReducer, useState } from "react";
-import Modal from "@/components/about-card/modal/Modal";
+import Modal from "@/components/modal/Modal";
 import ContactInfo from "../contact-info/ContactInfo";
 
 // INITIAL FORM DATA

@@ -12,7 +12,6 @@ export default function LinkCard({
   return (
     <div
       style={{ width, height, marginBottom }}
-      // className={`py-2 md:py-4 px-4 bg-dark-pink rounded-xl text-pink-200 flex flex-col justify-center`}
       className={` p-4 bg-dark-pink rounded-xl text-pink-200 flex flex-col justify-around`}
     >
       <h3 className="mb-1 md:text-3xl text-lg">{title}</h3>

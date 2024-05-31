@@ -1,9 +1,5 @@
 import React from "react";
 import Header from "../header/Header";
-import Image from "next/image";
-import bubbleTrio from "../../../public/img/bubbles/bubble_trio_1.png";
-
-// import Menu from "../menu/Menu";
 
 export default function Hero() {
   return (
@@ -25,11 +21,6 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      {/* <Image
-        src={bubbleTrio}
-        alt="bubles"
-        className="w-[30%] absolute top-[70%] right-[1%] z-40"
-      /> */}
     </section>
   );
 }
