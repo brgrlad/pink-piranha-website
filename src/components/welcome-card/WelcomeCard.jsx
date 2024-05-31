@@ -20,14 +20,14 @@ export default function WelcomeCard() {
           </p>
 
           <p className="md:text-lg lg:text-xl mt-5 w-[100%] md:w-[45%] lg:w-[60%] xl:w-[80%]">
-            Whether you're planning a corporate affair, a festival, or an
-            intimate gathering, we've got the expertise to ensure your venture
+            Whether you`re planning a corporate affair, a festival, or an
+            intimate gathering, we`ve got the expertise to ensure your venture
             is successful.
           </p>
 
           {/* <p className="md:w-2/3 xl:w-2/3 md:text-lg lg:text-xl mt-5"> */}
           <p className="md:text-lg lg:text-xl mt-5 w-[100%] md:w-[40%] lg:w-[60%] xl:w-[80%]">
-            Let's make your next event unforgettable together!
+            Let`s make your next event unforgettable together!
           </p>
         </div>
 
