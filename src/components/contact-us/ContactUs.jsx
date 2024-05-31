@@ -154,10 +154,11 @@ export default function ContactUs() {
           <p>
             Whether you`re looking for
             <span className="font-bold"> event staffing </span>for your next
-            event, get a <span className="font-bold"> price estimate </span> on
-            our services, <span className="font-bold">book a consultation</span>
-            , or just want to chat about your ideas, we are happy to assist you
-            with your enquires.
+            event in Ireland, get a{" "}
+            <span className="font-bold"> price estimate </span> on our services,{" "}
+            <span className="font-bold">book a consultation</span>, or just want
+            to chat about your ideas, we are happy to assist you with your
+            enquires.
           </p>
 
           <p>
