@@ -19,6 +19,7 @@ export default function LinkCard({
       <p className="mb-1 text-sm ">{content}</p>
 
       <Link
+        // ---- ON CLICK FUNCTION RECEIVED HERE IS CLOSING THE DROP DOWN MENU ONCE THE USER CLICKS ON THE LINK
         onClick={onClick}
         href={`${link}`}
         className="flex justify-end items-center w-full text-xs"

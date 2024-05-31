@@ -3,14 +3,16 @@ import Link from "next/link";
 import logo from "../../../public/img/pink-piranha-logo.png";
 import LinkCard from "../link-card/LinkCard";
 
-export default function Menu({ setIsClicked }) {
+// -- setShowMenu IS BEING PASSED AS A PROP FOR EACH OF THE MENU LINKS.
+// -- setShowMenu WILL OPEN/CLOSE THE DROPDOWN MENU
+export default function Menu({ setShowMenu }) {
   return (
     <nav className="menuBg fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%] md:w-[60%] xl:w-[50%] selection:bg-pink-300 shadow-xl bg-gradient-to-r from-pink-400 via-medium-pink to-dark-pink">
       <Image src={logo} width={100} height={100} alt="Pink Piranha logo" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4 pb-2">
         <div className="left-column md:order-1 order-2">
           <LinkCard
-            onClick={() => setIsClicked(false)}
+            onClick={() => setShowMenu(false)}
             title={"WORK WITH US"}
             content={
               "We're currently hiring for a variety of positions! Send us your CV!"
@@ -29,7 +31,11 @@ export default function Menu({ setIsClicked }) {
         <div className="right-column md:order-2 order-1">
           <ul className="h-full pb-10 text-right flex flex-col justify-between text-2xl text-light-pink font-bold">
             <li className="py-2">
-              <Link href="/#home" className="rounded-xl ">
+              <Link
+                href="/#home"
+                className="rounded-xl "
+                onClick={() => setShowMenu(false)}
+              >
                 HOME
               </Link>
             </li>
@@ -37,12 +43,12 @@ export default function Menu({ setIsClicked }) {
             <li className="py-2">
               <Link
                 href="/meet-the-team#photos"
-                onClick={() => setIsClicked(false)}
+                onClick={() => setShowMenu(false)}
               >
                 MEET THE TEAM
               </Link>
             </li>
-            <li className="py-2" onClick={() => setIsClicked(false)}>
+            <li className="py-2" onClick={() => setShowMenu(false)}>
               <Link href="/#what-we-do"> WHAT WE DO</Link>
             </li>
 

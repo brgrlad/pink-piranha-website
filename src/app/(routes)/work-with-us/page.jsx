@@ -25,7 +25,7 @@ const formReducer = (state, action) => {
 
 export default function WorkWithUs() {
   const [formData, dispatch] = useReducer(formReducer, initialFormData);
-  const [showModal, setShowModal] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,17 +34,17 @@ export default function WorkWithUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setShowModal(true);
+    setShowMenu(true);
     dispatch({ type: "RESET_FORM" });
   };
 
   return (
     <>
-      {showModal && (
+      {showMenu && (
         <Modal
           title={`Thank you!`}
           message={"We will reply as soon as possible."}
-          onClose={() => setShowModal(false)}
+          onClose={() => setShowMenu(false)}
         />
       )}
       <section className="grid grid-cols-1 lg:grid-cols-3 p-5 md:p-10">

@@ -1,4 +1,3 @@
-import LinkCard from "../link-card/LinkCard";
 import ServicesCard from "../services-card/ServicesCard";
 
 export default function WhatWeDo() {

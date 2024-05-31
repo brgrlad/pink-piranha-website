@@ -1,9 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
-
 export default function ServicesCard({
   title,
-  iconTest,
   content,
   icon,
   width = "100%",

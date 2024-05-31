@@ -1,5 +1,5 @@
-import logo from "../../../public/img/pink-piranha-logo.png";
 import Image from "next/image";
+import logo from "../../../public/img/pink-piranha-logo.png";
 
 export default function WelcomeCard() {
   return (
