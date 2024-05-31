@@ -21,15 +21,17 @@ export default function PhotoGallery() {
       <Image
         src={bubbleTrio}
         alt="bubles"
-        className="absolute  w-[150px] md:w-[200px] left-[60%]  lg:w-[250px]  md:left-[30%] lg:left-[45%] xl:left-[40%] top-[-6%] rotate-[150deg] z-40"
+        className="absolute w-[150px] md:w-[200px] left-[60%]  lg:w-[250px]  md:left-[30%] lg:left-[45%] xl:left-[40%] top-[-6%] rotate-[150deg] z-40"
       />
 
-      <div className="contentWrapper  text-dark-pink md:px-10 px-5 -mt-[20px] rounded-xl py-10 bg-medium-pink bg-gradient-to-b from-medium-pink via-pink-600 via-60% to-dark-pink">
-        <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl text-pink-200 ml-2">
-          Photo Gallery
+      <div className="contentWrapper  md:px-10 px-5 -mt-[20px] rounded-xl py-10 bg-medium-pink bg-gradient-to-b from-medium-pink via-medium-pink via-60% to-dark-pink">
+        <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl text-dark-pink">
+          PHOTO GALLERY
         </h2>
 
-        <p className="ml-2">Fresh snaps from our latest events!</p>
+        <p className="text-light-pink px-5 rounded-3xl -mt-[5px] mb-10 w-fit bg-dark-pink text-sm">
+          FRESH SNAPS FROM OUR LATEST EVENTS
+        </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-5">
           <Image
             src={staff01}

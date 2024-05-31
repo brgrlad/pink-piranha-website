@@ -4,7 +4,7 @@ import ServicesCard from "../services-card/ServicesCard";
 export default function WhatWeDo() {
   return (
     <section
-      className=" bg-pink-800 text-light-pink py-10 md:px-10 px-5 rounded-3xl -mt-[50px] shadow-lg"
+      className=" bg-pink-800  text-light-pink pt-10 pb-20 md:px-10 px-5 rounded-3xl -mt-[50px] shadow-lg"
       id="what-we-do"
     >
       <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl my-5 what-we-do pt-[60px]">
@@ -22,7 +22,7 @@ export default function WhatWeDo() {
         Ireland`s event industry professionals.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-3 gap-x-3 sm-gap-x-0 py-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-3 gap-x-3 sm-gap-x-0 py-5 ">
         <ServicesCard
           title={"ENTRY MANAGEMENT"}
           content={[
