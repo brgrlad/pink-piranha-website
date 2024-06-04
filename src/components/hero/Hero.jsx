@@ -1,5 +1,8 @@
 import React from "react";
 import Header from "../header/Header";
+import arrowSVG from "../../../public/img/icons/arrow.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -15,10 +18,21 @@ export default function Hero() {
             We specialize in the art of assembling exceptional teams that bring
             your vision to life.
           </h2>
-          <p className="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl mt-10">
+          <p className="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl mt-5">
             From concept to execution, we handle the details, ensuring that
             every element of your event is curated with precision and care.
           </p>
+
+          <Link href="/#contact-us">
+            <button className="whitespace-nowrap shadow-3xl mt-5 h-[40px] bg-dark-pink text-light-pink hover:opacity-70 rounded-full text-sm px-8 py-2 text-center mb-2 z-50 flex">
+              Book a consultation now!{" "}
+              <Image
+                src={arrowSVG}
+                alt={"Forward arrow icon"}
+                className="ml-2 fill-dark-pink"
+              />
+            </button>
+          </Link>
         </div>
       </div>
     </section>
