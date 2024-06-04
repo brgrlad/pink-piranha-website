@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Pink Piranha",
   description:
-    "We provide event staff and business solutions for corporate and music events in Ireland. Reach out to us for the best rates!",
+    "We provide event staff and business solutions for corporate events and music festivals in Ireland. Reach out to us to get a free consultation now!",
 };
 
 export default function RootLayout({ children }) {

@@ -9,7 +9,7 @@ import bubbleTrio from "../../../public/img/bubbles/bubble_trio_1.png";
 
 export default function PhotoGallery() {
   return (
-    <section className="relative rounded-3xl shadow-lg" id="photo-gallery">
+    <section className="relative rounded-4xl shadow-lg" id="photo-gallery">
       <Image
         src={waves}
         alt="section divider: an illustration of sea waves in shades of pink"

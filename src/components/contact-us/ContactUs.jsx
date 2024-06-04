@@ -46,7 +46,7 @@ export default function ContactUs() {
 
   return (
     <section
-      className="bg-light-pink text-dark-pink md:px-10 px-5 p-20 relative z-0 -mt-[40px] rounded-3xl shadow-2xl"
+      className="bg-light-pink text-dark-pink md:px-10 px-5 p-5 relative z-0 -mt-[40px] rounded-3xl shadow-2xl"
       id="contact-us"
     >
       {/* MODAL IS SHOWN UPON SUBMIT */}

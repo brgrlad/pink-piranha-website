@@ -71,6 +71,8 @@ h3 {
 #what-we-do {
   background-image: url(../../public/img/backgrounds/sssquiggly.svg);
   background-position: left 200px;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
 }
 
 @layer utilities {
