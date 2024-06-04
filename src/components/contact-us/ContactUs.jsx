@@ -80,7 +80,7 @@ export default function ContactUs() {
                 value={formData.firstName}
                 onChange={handleChange}
                 required
-                className="block bg-light-pink border border-medium-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink w-full p-2.5"
+                className="block bg-light-pink border border-dark-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink w-full p-2.5"
               />
             </div>
 
@@ -98,7 +98,7 @@ export default function ContactUs() {
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleChange}
-                className="block bg-light-pink border border-medium-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink w-full p-2.5"
+                className="block bg-light-pink border border-dark-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink w-full p-2.5"
               />
             </div>
 
@@ -116,7 +116,7 @@ export default function ContactUs() {
                 name="emailAddress"
                 value={formData.emailAddress}
                 onChange={handleChange}
-                className="bg-light-pink border border-medium-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink block w-full p-2.5"
+                className="bg-light-pink border border-dark-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink block w-full p-2.5"
               />
             </div>
 
@@ -136,7 +136,7 @@ export default function ContactUs() {
               required
               placeholder="Tell us about yourself..."
               rows="4"
-              className="block p-2.5 w-full text-sm bg-light-pink border border-medium-pink text-dark-pink rounded-2xl focus:ring-dark-pink focus:border-dark-pink"
+              className="block p-2.5 w-full text-sm bg-light-pink border border-dark-pink text-dark-pink rounded-2xl focus:ring-dark-pink focus:border-dark-pink"
             ></textarea>
 
             {/* SUBMIT BUTTON */}
