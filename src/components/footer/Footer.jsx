@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -21,31 +22,31 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 sm:gap-6 ">
             <div className="sans-serif">
               <h2 className="mb-6 text-sm font-semibold">NAVIGATION</h2>
-              <ul className="font-medium">
-                <li className="mb-4">
-                  <a href="/#home" className="hover:underline">
-                    Home
-                  </a>
+              <ul className="text-xs">
+                <li className="mb-3">
+                  <Link href="/#home" className="hover:underline">
+                    HOME
+                  </Link>
                 </li>
-                <li className="mb-4">
-                  <a href="/#what-we-do" className="hover:underline">
-                    What We Do
-                  </a>
+                <li className="mb-3">
+                  <Link href="/#what-we-do" className="hover:underline">
+                    WHAT WE DO
+                  </Link>
                 </li>
-                <li className="mb-4">
-                  <a href="/#photo-gallery" className="hover:underline">
-                    Photo Gallery
-                  </a>
+                <li className="mb-3">
+                  <Link href="/#photo-gallery" className="hover:underline">
+                    PHOTO GALLERY
+                  </Link>
                 </li>
-                <li className="mb-4">
-                  <a href="/meet-the-team" className="hover:underline">
-                    Meet The Team
-                  </a>
+                <li className="mb-3">
+                  <Link href="/meet-the-team" className="hover:underline">
+                    MEET THE TEAM
+                  </Link>
                 </li>
-                <li className="mb-4">
-                  <a href="/#contact-us" className="hover:underline">
-                    Contact Us
-                  </a>
+                <li className="mb-3">
+                  <Link href="/#contact-us" className="hover:underline">
+                    CONTACT US
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -53,28 +54,31 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold uppercase">
                 Follow us
               </h2>
-              <ul className="text-gray-500400 font-medium">
-                <li className="mb-4">
-                  <a
-                    href="https://github.com/themesberg/flowbite"
-                    className="hover:underline "
-                  >
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
+              <ul className="text-gray-500400 text-xs">
+                <li className="mb-3">
+                  <Link
+                    href="https://www.instagram.com/pinkpiranha.agency/"
+                    rel="noopener noreferrer"
+                    target="_blank"
                     className="hover:underline"
                   >
-                    Discord
-                  </a>
+                    INSTAGRAM
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link
+                    href="https://www.linkedin.com/company/pink-piranha-agency/?originalSubdomain=ie"
+                    className="hover:underline"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    LINKEDIN
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       </div>
     </footer>
   );

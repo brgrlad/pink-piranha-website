@@ -21,6 +21,7 @@ export default function Menu({ setShowMenu }) {
           />
 
           <LinkCard
+            onClick={() => setShowMenu(false)}
             title={"REACH OUT"}
             content={
               "Need a quote, want to discuss your ideas? We're happy to help! "
