@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         custom: ["Aventine"],
+        sans: ["Montserrat", "sans-serif"],
       },
       colors: {
         "light-pink": "#ffd6e6",
