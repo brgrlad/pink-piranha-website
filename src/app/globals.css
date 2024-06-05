@@ -13,13 +13,17 @@ html {
   font-style: normal;
 }
 
+.aventine-font {
+  font-family: "Aventine";
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("opentype"),
     url("/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("opentype");
 
-  font-weight: normal;
-  font-style: normal;
+  /* font-weight: normal;
+  font-style: normal; */
 }
 
 :root {
@@ -41,16 +45,14 @@ ul {
 footer h2,
 p,
 a {
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Montserrat";
 }
 
 p {
   margin-bottom: 20px;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   font-size: 20px;
-
   font-family: "Montserrat";
-  font-weight: bolder;
+  font-weight: light;
 }
 
 h1 {

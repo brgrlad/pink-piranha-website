@@ -6,11 +6,14 @@ export default function WelcomeCard() {
     <section className="bg-light-pink text-dark-pink md:px-10 px-5 rounded-3xl relative mt-[-50px] z-10 shadow-lg">
       <div className="grid max-w-screen-xl py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 h-auto">
         <div className="mr-auto place-self-center lg:col-span-7">
-          <h2 className=" text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl">
+          {/* <h2 className=" text-4xl text-nowrap md:text-4xl lg:text-6xl xl:text-7xl">
             WELCOME TO <span className="sm:inline block"> PINK PIRANHA </span>
+          </h2> */}
+          <h2 className=" text-3xl text-nowrap md:text-4xl lg:text-6xl xl:text-7xl">
+            WELCOME TO PINK PIRANHA
           </h2>
 
-          <h3 className="lg:text-nowrap text-1xl line lg:text-5xl leading-tight mt-5">
+          <h3 className="lg:text-nowrap text-2xl line lg:text-5xl leading-tight mt-5">
             Where events come alive with the perfect team
           </h3>
 
