@@ -24,7 +24,7 @@ export default function Hero() {
           </p>
 
           <Link href="/#contact-us">
-            <button className="whitespace-nowrap shadow-3xl mt-5 h-[40px] bg-dark-pink text-light-pink hover:opacity-70 rounded-full text-sm px-8 py-2 text-center mb-2 z-50 flex">
+            <button className="whitespace-nowrap shadow-3xl mt-5 h-[40px] bg-dark-pink text-light-pink  border-dark-pink hover:opacity-70 rounded-full text-sm px-8 py-2 text-center mb-2 z-50 flex font-bold">
               Book a consultation now!{" "}
               <Image
                 src={arrowSVG}

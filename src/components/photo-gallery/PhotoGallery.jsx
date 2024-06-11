@@ -1,11 +1,12 @@
 import Image from "next/image";
-import staff01 from "../../../public/img/photos/staff01.jpg";
-import staff02 from "../../../public/img/photos/staff02.jpg";
-import staff03 from "../../../public/img/photos/staff03.jpg";
-import staff04 from "../../../public/img/photos/staff04.jpg";
-import staff05 from "../../../public/img/photos/staff05.jpg";
-import waves from "../../../public/img/waves/svg-2.png";
-import bubbleTrio from "../../../public/img/bubbles/bubble_trio_1.png";
+import staff01 from "@/public/img/photos/staff01.jpg";
+
+import staff02 from "@/public/img/photos/staff02.jpg";
+import staff03 from "@/public/img/photos/staff03.jpg";
+import staff04 from "@/public/img/photos/staff04.jpg";
+import staff05 from "@/public/img/photos/staff05.jpg";
+import waves from "@/public/img/waves/svg-2.png";
+import bubbleTrio from "@/public/img/bubbles/bubble_trio_1.png";
 
 export default function PhotoGallery() {
   return (
