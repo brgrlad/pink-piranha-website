@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ServicesCard({
   title,
   content,
+  link,
   icon,
+
   width = "100%",
   height = "410px",
   marginBottom = "20px",
@@ -25,26 +28,46 @@ export default function ServicesCard({
     );
   };
 
-  // ✓
   return (
     <div
       style={{ width, height, marginBottom }}
-      className={`py-1 md:py-2 px-4 bg-light-pink rounded-xl text-dark-pink flex flex-col justify-start text-center`}
+      className="py-1 md:py-2 px-4 bg-light-pink rounded-xl text-dark-pink flex flex-col justify-start text-center"
     >
       {icon}
 
       <h3 className="mb-5 text-[16px] font-bold font-sans rounded-3xl p-1 bg-dark-pink text-light-pink">
         {title}
       </h3>
-      <ul className="text-sm">
-        {content.map((service) => (
-          <li key={service}>
-            <p className="mb-4 text-[16px]">
-              <TickIcon /> {service}
-            </p>
-          </li>
-        ))}
-      </ul>
+
+      {content && (
+        <ul className="text-sm">
+          {content.map((service) => (
+            <li key={service}>
+              <p className="mb-4 text-[16px]">
+                <TickIcon /> {service}
+              </p>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {link && (
+        <Link href="/#contact-us" className="mt-5">
+          CONTACT US NOW!{" "}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="size-6 inline"
+          >
+            <path
+              fillRule="evenodd"
+              d="M12 2.25a.75.75 0 0 1 .75.75v16.19l2.47-2.47a.75.75 0 1 1 1.06 1.06l-3.75 3.75a.75.75 0 0 1-1.06 0l-3.75-3.75a.75.75 0 1 1 1.06-1.06l2.47 2.47V3a.75.75 0 0 1 .75-.75Z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </Link>
+      )}
     </div>
   );
 }
