@@ -6,7 +6,6 @@ export default function ServicesCard({
   content,
   link,
   icon,
-
   width = "100%",
   height = "410px",
   marginBottom = "20px",

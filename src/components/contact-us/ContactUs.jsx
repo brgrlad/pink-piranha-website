@@ -46,7 +46,7 @@ export default function ContactUs() {
 
   return (
     <section
-      className="bg-light-pink text-dark-pink md:px-10 px-5 p-5 relative z-0 -mt-[40px] rounded-3xl shadow-2xl"
+      className="bg-light-pink text-dark-pink md:px-10 py-5 relative z-0 -mt-[40px] rounded-3xl shadow-2xl "
       id="contact-us"
     >
       {/* MODAL IS SHOWN UPON SUBMIT */}
@@ -58,12 +58,14 @@ export default function ContactUs() {
         />
       )}
       {/* PAGE TITLE */}
-      <h2 className="text-4xl md:text-6xl mt-10">CONTACT US!</h2>
+      <h2 className="text-4xl md:text-6xl mx-10 mt-10 lg:px-2 2xl:px-40">
+        CONTACT US!
+      </h2>
 
       {/* MAIN WRAPPER FOR THE FORM SECTION  */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 py-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 py-5 mx-10 2xl:px-40">
         {/* LEFT SIDE COL - FORM FIELDS */}
-        <div className="formWrapper w-[100%] flex flex-col justify-items-end">
+        <div className="formWrapper w-[100%] flex flex-col justify-items-end lg:px-2">
           <form className="mb-20" onSubmit={(e) => handleSubmit(e)}>
             {/* FIRST NAME FIELD */}
             <div className="mb-5">

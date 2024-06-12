@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PhotoGallery() {
   return (
-    <section className="relative rounded-4xl shadow-lg" id="photo-gallery">
+    <section className="relative rounded-4xl shadow-lg " id="photo-gallery">
       <Image
         src="/img/waves/svg-2.png"
         alt="section divider: an illustration of sea waves in shades of pink"
@@ -19,7 +19,7 @@ export default function PhotoGallery() {
         height={150}
       />
 
-      <div className="contentWrapper  md:px-10 px-5 -mt-[20px] rounded-xl py-10 bg-medium-pink bg-gradient-to-b from-medium-pink via-medium-pink via-60% to-dark-pink">
+      <div className="contentWrapper px-5 md:px-20 2xl:px-60  -mt-[20px] rounded-xl py-10 bg-medium-pink bg-gradient-to-b from-medium-pink via-medium-pink via-60% to-dark-pink">
         <h2 className="text-4xl lg:text-nowrap md:text-4xl lg:text-6xl xl:text-7xl text-dark-pink">
           PHOTO GALLERY
         </h2>

@@ -9,7 +9,7 @@ export default function WhatWeDo() {
       className=" bg-pink-800  text-light-pink pt-10 pb-20 md:px-10 px-5 rounded-3xl -mt-[50px] shadow-lg"
       id="what-we-do"
     >
-      <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+      <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-2xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-10 2xl:px-20">
         <div>
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
             WHAT WE DO
@@ -33,7 +33,7 @@ export default function WhatWeDo() {
             hands of Ireland`s event industry professionals!
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-4 mt-10">
+        <div className="grid grid-cols-2 gap-4 mt-10 ">
           <Image
             src={staffPhoto1}
             alt="Pink Piranha staff member placing wristbands on a festival attendee"
@@ -47,7 +47,7 @@ export default function WhatWeDo() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-3 sm-gap-x-0 py-5 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-3 sm-gap-x-0 py-5 max-w-screen-2xl mx-auto px-10 2xl:px-20">
         <ServicesCard
           title={"ENTRY MANAGEMENT"}
           content={[
@@ -155,7 +155,7 @@ export default function WhatWeDo() {
           content={[
             "Live Social Media Coverage",
             "Door to Door flyering",
-            "Creater Partnerships",
+            "Content Creator Partnerships",
           ]}
           icon={
             <svg
