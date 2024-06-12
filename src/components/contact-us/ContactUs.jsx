@@ -71,6 +71,7 @@ export default function ContactUs() {
             method="POST"
             className="mb-20"
             data-netlify="true"
+            value={formData}
             onSubmit={(e) => handleSubmit(e)}
           >
             <input type="hidden" name="contact-us" value={formData} />
