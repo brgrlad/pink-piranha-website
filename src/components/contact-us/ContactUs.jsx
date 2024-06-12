@@ -67,12 +67,10 @@ export default function ContactUs() {
         {/* LEFT SIDE COL - FORM FIELDS */}
         <div className="formWrapper w-[100%] flex flex-col justify-items-end lg:px-2">
           <form
-            name="contact"
+            name="contact-us"
             method="POST"
             className="mb-20"
             data-netlify="true"
-            netlify-honeypot="bot-field"
-            netlify
             onSubmit={(e) => handleSubmit(e)}
           >
             <input type="hidden" name="form-name" value="contact" />
