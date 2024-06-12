@@ -70,9 +70,12 @@ export default function ContactUs() {
             name="contact"
             method="POST"
             className="mb-20"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
             netlify
             onSubmit={(e) => handleSubmit(e)}
           >
+            <input type="hidden" name="form-name" value="contact" />
             {/* FIRST NAME FIELD */}
             <div className="mb-5">
               <label
