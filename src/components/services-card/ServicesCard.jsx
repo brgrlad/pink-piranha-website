@@ -41,9 +41,9 @@ export default function ServicesCard({
       {content && (
         <ul className="text-sm">
           {content.map((service) => (
-            <li key={service}>
-              <p className="mb-4 text-[16px]">
-                <TickIcon /> {service}
+            <li key={service.toUpperCase()}>
+              <p className="mb-4 text-[16px] font-medium">
+                <TickIcon /> {service.toUpperCase()}
               </p>
             </li>
           ))}
