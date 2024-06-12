@@ -24,7 +24,7 @@ export default function PhotoGallery() {
           PHOTO GALLERY
         </h2>
 
-        <p className="text-light-pink px-5 rounded-3xl -mt-[5px] mb-10 w-fit bg-dark-pink text-sm">
+        <p className="text-light-pink px-2 sm:px-5 rounded-3xl -mt-[5px] mb-10 w-fit bg-dark-pink text-[13px]  sm:text-sm">
           FRESH SNAPS FROM OUR LATEST EVENTS
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-5">

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-pink text-light-pink font-sans -mt-[50px] pt-[50px] lg:px-20">
+    <footer className="bg-dark-pink text-light-pink font-sans -mt-[50px] pt-[50px] px-10 lg:px-20">
       <div className="mx-auto w-full py-8 ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -19,7 +19,8 @@ export default function Footer() {
               </h2>
             </a>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 text-right">
+
+          <div className="grid grid-cols-2 md:grid-cols-2 w-fit mr-auto sm:w-full md:w-fit  md:ml-auto md:mr-0 sm:text-right gap-2 sm:gap-6 md:gap-8 text-left ">
             <div className="sans-serif">
               <h2 className="mb-6 text-sm font-bold">NAVIGATION</h2>
 
