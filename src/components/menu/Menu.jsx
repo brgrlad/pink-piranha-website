@@ -7,19 +7,10 @@ import LinkCard from "../link-card/LinkCard";
 // -- setShowMenu WILL OPEN/CLOSE THE DROPDOWN MENU
 export default function Menu({ setShowMenu }) {
   return (
-    <nav className="menuBg fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%] md:w-[60%] xl:w-[50%] selection:bg-pink-300 shadow-xl bg-gradient-to-r from-pink-400 via-medium-pink to-dark-pink">
+    <nav className="menuBg fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%] md:w-[60%] xl:w-[50%] selection:bg-pink-300 shadow-xl bg-gradient-to-r from-pink-400 via-medium-pink to-dark-pink h-auto">
       <Image src={logo} width={100} height={100} alt="Pink Piranha logo" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4 pb-2">
         <div className="left-column md:order-1 order-2">
-          <LinkCard
-            onClick={() => setShowMenu(false)}
-            title={"WORK WITH US"}
-            content={
-              "We're currently hiring for a variety of positions! Send us  your CV!"
-            }
-            link="/#contact-us"
-          />
-
           <LinkCard
             onClick={() => setShowMenu(false)}
             title={"REACH OUT"}
@@ -28,9 +19,18 @@ export default function Menu({ setShowMenu }) {
             }
             link="#contact-us"
           />
+
+          <LinkCard
+            onClick={() => setShowMenu(false)}
+            title={"WORK WITH US"}
+            content={
+              "We're currently hiring for a variety of positions! Send us  your CV!"
+            }
+            link="/#contact-us"
+          />
         </div>
         <div className="right-column md:order-2 order-1">
-          <ul className="h-full pb-10 text-right flex flex-col justify-between text-2xl text-light-pink font-bold">
+          <ul className="h-full pb-1 text-right flex flex-col justify-between text-2xl text-light-pink font-bold">
             <li className="py-2">
               <Link
                 href="/#home"

@@ -21,9 +21,6 @@ html {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("opentype"),
     url("/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("opentype");
-
-  /* font-weight: normal;
-  font-style: normal; */
 }
 
 :root {
