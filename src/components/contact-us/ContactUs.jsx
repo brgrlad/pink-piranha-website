@@ -66,7 +66,12 @@ export default function ContactUs() {
       <div className="grid grid-cols-1 lg:grid-cols-2 py-5 mx-10 2xl:px-40">
         {/* LEFT SIDE COL - FORM FIELDS */}
         <div className="formWrapper w-[100%] flex flex-col justify-items-end lg:px-2">
-          <form className="mb-20" onSubmit={(e) => handleSubmit(e)} netlify>
+          <form
+            name="contact"
+            className="mb-20"
+            onSubmit={(e) => handleSubmit(e)}
+            netlify
+          >
             {/* FIRST NAME FIELD */}
             <div className="mb-5">
               <label
