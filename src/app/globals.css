@@ -69,12 +69,9 @@ h3 {
 
 /* HERO BACKGROUND IMAGE  */
 .hero {
-  /* background-image: url(../../public/img/photos/crowd03.jpg); */
   background-image: url(../../public/img/photos/hero-001.jpg);
-
   background-size: cover;
   background-repeat: no-repeat;
-
   min-height: 100vh;
 }
 
@@ -87,7 +84,6 @@ h3 {
 #what-we-do {
   background-image: url(../../public/img/backgrounds/sssquiggly.svg);
   background-position: left 200px;
-
   background-repeat: no-repeat;
 }
 
