@@ -51,7 +51,11 @@ export default function WorkWithUs() {
         <div className="formWrapper w-[100%] col-span-2 flex flex-col order-2 lg:order-1">
           <h2 className="text-4xl md:text-6xl py-5">Work with us!</h2>
 
-          <form className="mb-20" onSubmit={(e) => handleSubmit(e)}>
+          <form
+            className="mb-20"
+            onSubmit={(e) => handleSubmit(e)}
+            name="work-with-us"
+          >
             <div className="mb-5">
               <label
                 htmlFor="firstName"
