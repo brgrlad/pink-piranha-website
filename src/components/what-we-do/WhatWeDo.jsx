@@ -6,10 +6,10 @@ import Image from "next/image";
 export default function WhatWeDo() {
   return (
     <section
-      className=" bg-pink-800  text-light-pink pt-10 pb-20 md:px-10 px-5 rounded-3xl -mt-[50px] shadow-lg"
+      className=" bg-pink-800 text-light-pink pt-10 pb-20 md:px-10 px-2 sm:px-5 rounded-3xl -mt-[50px] shadow-lg"
       id="what-we-do"
     >
-      <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-2xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-10 2xl:px-20">
+      <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-2xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-5 2xl:px-20">
         <div>
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold">
             WHAT WE DO
@@ -47,7 +47,7 @@ export default function WhatWeDo() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-3 sm-gap-x-0 py-5 max-w-screen-2xl mx-auto px-10 2xl:px-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-3 gap-x-3 sm-gap-x-0 py-5 max-w-screen-2xl mx-auto px-5  2xl:px-20">
         <ServicesCard
           title={"ENTRY MANAGEMENT"}
           content={[

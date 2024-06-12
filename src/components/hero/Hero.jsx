@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="hero bg-dark-pink text-pink-200 md:px-10 px-5 py-10 flex "
+      className="hero bg-dark-pink text-pink-200 md:px-10 px-2 py-10 flex "
       id="home"
     >
       <Header />

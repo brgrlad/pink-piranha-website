@@ -87,12 +87,32 @@ h3 {
 #what-we-do {
   background-image: url(../../public/img/backgrounds/sssquiggly.svg);
   background-position: left 200px;
-  /* background-size: cover; */
+
   background-repeat: no-repeat;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media (max-width: 2000px) {
+  #what-we-do {
+    background-size: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  #what-we-do {
+    background-size: contain;
+
+    background-position: center 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  #what-we-do {
+    background-size: contain;
+    background-position: center 18%;
   }
 }
