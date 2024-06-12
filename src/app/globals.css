@@ -67,6 +67,11 @@ h3 {
   font-size: 1rem;
 }
 
+nav {
+  max-height: 100vh;
+  max-height: 100dvh;
+}
+
 /* HERO BACKGROUND IMAGE  */
 .hero {
   background-image: url(../../public/img/photos/hero-001.jpg);
