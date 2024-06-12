@@ -28,7 +28,7 @@ export default function Hero() {
               Book a consultation now!{" "}
               <Image
                 src={arrowSVG}
-                alt={"Forward arrow icon"}
+                alt="Forward arrow icon"
                 className="ml-2 fill-dark-pink"
               />
             </button>

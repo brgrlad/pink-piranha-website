@@ -32,14 +32,14 @@ export default function PhotoGallery() {
             width={500}
             height={500}
             src="/img/photos/staff01.jpg"
-            alt="placeholder"
+            alt="A group of Pink Piranha staff posing at a festival entrance, hands up in the air"
             className="aspect-square col-span-1 object-cover rounded-xl"
           />
           <Image
             width={500}
             height={500}
             src="/img/photos/staff02.jpg"
-            alt="placeholder"
+            alt="Close-up of Pink Piranha uniform with company logo"
             className="aspect-square col-span-1 object-cover rounded-xl"
           />
 
@@ -47,21 +47,21 @@ export default function PhotoGallery() {
             width={500}
             height={500}
             src="/img/photos/staff03.jpg"
-            alt="placeholder"
+            alt="Teenagers queuing outdoors for ticket check by Pink Piranha staff"
             className="aspect-square col-span-1 object-cover rounded-xl"
           />
           <Image
             width={500}
             height={500}
             src="/img/photos/staff04.jpg"
-            alt="placeholder"
+            alt="Four Pink Piranha cleaning staff members in uniform posing and smiling at festival camping site"
             className="aspect-square col-span-1 object-cover rounded-xl"
           />
           <Image
             width={1000}
             height={500}
             src="/img/photos/staff05.jpg"
-            alt="placeholder"
+            alt="DJ performing at a music gig, hands on decks and wearing headphones"
             className="col-span-2 aspect-[2/1] object-cover rounded-xl"
           />
         </div>
