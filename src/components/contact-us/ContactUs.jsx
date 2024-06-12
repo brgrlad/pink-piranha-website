@@ -68,9 +68,10 @@ export default function ContactUs() {
         <div className="formWrapper w-[100%] flex flex-col justify-items-end lg:px-2">
           <form
             name="contact"
+            method="POST"
             className="mb-20"
-            onSubmit={(e) => handleSubmit(e)}
             netlify
+            onSubmit={(e) => handleSubmit(e)}
           >
             {/* FIRST NAME FIELD */}
             <div className="mb-5">
