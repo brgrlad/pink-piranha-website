@@ -148,7 +148,10 @@ export default function ContactUs() {
             ></textarea>
 
             {/* SUBMIT BUTTON */}
-            <button className="bg-dark-pink text-light-pink hover:opacity-85 text-white font-bold py-2 px-4 rounded-full absolute my-5">
+            <button
+              type="submit"
+              className="bg-dark-pink text-light-pink hover:opacity-85 text-white font-bold py-2 px-4 rounded-full absolute my-5"
+            >
               Send Message
             </button>
           </form>
