@@ -64,11 +64,6 @@ h3 {
   font-size: 1rem;
 }
 
-nav {
-  max-height: 100vh;
-  max-height: 100dvh;
-}
-
 /* HERO BACKGROUND IMAGE  */
 .hero {
   background-image: url(../../public/img/photos/hero-001.jpg);
@@ -82,11 +77,21 @@ nav {
   background-image: url(../../public/img/waves/svg-2.png);
 }
 
-/*  WHAT WE DO WAVY BACKGROUND BEHIND CARDS*/
 #what-we-do {
   background-image: url(../../public/img/backgrounds/sssquiggly.svg);
   background-position: left 200px;
   background-repeat: no-repeat;
+}
+
+/* DROP DOWN MENU ANIMATION */
+
+.menuBg {
+  margin-top: -700px;
+  transition: margin-top 0.5s ease-in-out;
+}
+
+.menuBg.fade-in {
+  margin-top: 0;
 }
 
 @layer utilities {

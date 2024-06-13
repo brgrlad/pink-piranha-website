@@ -1,13 +1,25 @@
+// "use client";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/img/pink-piranha-logo.png";
 import LinkCard from "../link-card/LinkCard";
+import { useEffect } from "react";
 
 // -- setShowMenu IS BEING PASSED AS A PROP FOR EACH OF THE MENU LINKS.
 // -- setShowMenu WILL OPEN/CLOSE THE DROPDOWN MENU
-export default function Menu({ setShowMenu }) {
+export default function Menu({ showMenu, setShowMenu }) {
+  useEffect(() => {
+    console.log("test");
+    console.log(showMenu);
+  }, [showMenu]);
   return (
-    <nav className="menuBg fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%] md:w-[60%] xl:w-[50%] selection:bg-pink-300 shadow-xl bg-gradient-to-r from-pink-400 via-medium-pink to-dark-pink h-auto">
+    // <nav className="menuBg fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%] md:w-[60%] xl:w-[50%] selection:bg-pink-300 shadow-xl bg-gradient-to-r from-pink-400 via-medium-pink to-dark-pink h-auto ">
+
+    <nav
+      className={`menuBg fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%] md:w-[60%] xl:w-[50%] selection:bg-pink-300 shadow-xl bg-gradient-to-r from-pink-400 via-medium-pink to-dark-pink h-auto ${
+        showMenu ? "fade-in" : ""
+      }`}
+    >
       <Image src={logo} width={100} height={100} alt="Pink Piranha logo" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4 pb-2">
         <div className="left-column md:order-1 order-2">

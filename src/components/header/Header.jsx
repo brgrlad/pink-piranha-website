@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import logo from "../../../public/img/pink-piranha-logo.png";
 import Image from "next/image";
@@ -27,12 +27,13 @@ export default function Header() {
       <button
         type="button"
         className="shadow-3xl border border-dark-pink text-dark-pink bg-light-pink font-bold rounded-full text-sm h-[40px] self-center px-8 py-2 text-center mb-2 z-50"
-        onClick={() => setShowMenu((prev) => !showMenu)}
+        onClick={() => setShowMenu((prev) => !prev)}
       >
         {showMenu ? "CLOSE" : "MENU"}
       </button>
 
-      {showMenu && <Menu setShowMenu={setShowMenu} />}
+      {/* {showMenu && <Menu showMenu={showMenu} setShowMenu={setShowMenu} />} */}
+      <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
     </header>
   );
 }
