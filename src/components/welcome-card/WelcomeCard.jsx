@@ -3,7 +3,7 @@ import logo from "../../../public/img/pink-piranha-logo.png";
 
 export default function WelcomeCard() {
   return (
-    <section className="bg-light-pink text-dark-pink px-5 rounded-3xl  relative mt-[-50px] z-10 shadow-lg">
+    <section className="bg-light-pink text-dark-pink px-5 md:px-10 rounded-3xl  relative mt-[-50px] z-10 shadow-lg">
       <div className="grid max-w-screen-xl py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 h-auto">
         <div className="place-self-center lg:col-span-12 2xl:col-span-6 2xl:ml-10">
           <h2 className="text-3xl text-nowrap md:text-4xl lg:text-6xl xl:text-7xl">

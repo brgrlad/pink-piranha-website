@@ -8,7 +8,7 @@ import { useEffect } from "react";
 export default function Menu({ showMenu, setShowMenu }) {
   return (
     <nav
-      className={`menuBg fixed z-40 top-1 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[97%] md:w-[60%] xl:w-[50%] selection:bg-pink-300 shadow-xl bg-gradient-to-r from-pink-400 via-medium-pink to-dark-pink h-dvh sm:h-auto ${
+      className={`menuBg fixed z-40 top-0 right-0 bg-pink-400 m-2 rounded-xl p-1 lg:p-5 w-[100%] md:w-[60%] xl:w-[50%] selection:bg-pink-300 shadow-xl bg-gradient-to-r from-pink-400 via-medium-pink to-dark-pink ${
         showMenu ? "fade-in" : ""
       }`}
     >
