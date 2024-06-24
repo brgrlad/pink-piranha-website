@@ -1,5 +1,5 @@
 "use client";
-import { useReducer, useState } from "react";
+import { useReducer, useState, useEffect } from "react";
 import Modal from "@/components/modal/Modal";
 import ContactInfo from "../contact-info/ContactInfo";
 
@@ -27,6 +27,21 @@ const formReducer = (state, action) => {
 };
 
 export default function ContactUs() {
+  useEffect(() => {
+    const callAPI = async () => {
+      try {
+        const res = await fetch("/api/submit-form", {
+          method: "GET",
+          cache: "no-store",
+        });
+        const data = await res.json();
+      } catch (e) {
+        console.log(e);
+      }
+    };
+
+    callAPI();
+  }, []);
   // STATES FOR FORM AND MODAL
   const [formData, dispatch] = useReducer(formReducer, initialFormData);
   const [showModal, setShowModal] = useState(false);
