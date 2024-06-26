@@ -15,9 +15,10 @@ const initialFormData = {
 
 export default function ContactUs() {
   const [formData, setFormData] = useState(initialFormData);
+  const [error, setError] = useState("");
   const [showModal, setShowModal] = useState(false);
 
-  // HANDLE INPUT CHANGE
+  // HANDLE INPUT CHANGE DYNAMICALLY
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -28,17 +29,15 @@ export default function ContactUs() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      let data = await fetchBusinessAPI("/api/submit-form", formData);
-      console.log(data);
+      await fetchBusinessAPI("/api/submit-form", formData);
+      setShowModal(true);
+      setFormData(initialFormData);
     } catch (e) {
-      console.log("contact us 2");
-      console.log(e.message);
+      console.log("submission error:", e.message);
+      setError("Failed to send. Please try again");
+      setShowModal(true);
     }
-
-    setFormData(initialFormData);
-    setShowModal(true);
   };
 
   return (
@@ -49,8 +48,8 @@ export default function ContactUs() {
       {/* MODAL IS SHOWN UPON SUBMIT */}
       {showModal && (
         <Modal
-          title={`Hey, thanks!`}
-          message={"We will reply as soon as possible."}
+          title={error ? `Oops!` : `Hey, thanks!`}
+          message={error ? `${error}` : "We will reply as soon as possible."}
           onClose={() => setShowModal(false)}
         />
       )}

@@ -2,10 +2,11 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
 export async function POST(req) {
+  // PARSE INCOMING REQUEST
   const body = await req.text();
-
   const parsedBody = JSON.parse(body);
 
+  // CREATE AN INSTANCE OF RESEND
   const resend = new Resend(process.env.API_KEY);
 
   try {
@@ -19,19 +20,20 @@ export async function POST(req) {
     });
 
     if (error) {
-      throw new Error(error);
+      throw new Error(error.message);
     }
-    console.log("route js");
+
     console.log(data);
-  } catch (e) {
+
     return NextResponse.json(
-      { ok: false, message: "something went wrong" },
-      { status: 501 }
+      { ok: true, message: "E-mail sent successfully" },
+      { status: 200 }
+    );
+  } catch (e) {
+    console.log(e);
+    return NextResponse.json(
+      { ok: false, message: e.message },
+      { status: 500 }
     );
   }
-
-  return NextResponse.json(
-    { ok: true, message: "E-mail sent successfully" },
-    { status: 200 }
-  );
 }

@@ -20,11 +20,12 @@ export default async function fetchBusinessAPI(url, formData) {
     const data = await res.json();
 
     if (!data.ok) {
-      throw new Error(data.message);
+      throw new Error(data.message || "unknown error ocurred");
     }
 
     return data;
   } catch (e) {
-    return e;
+    console.log("Error in fetchBusinessAPI:", e);
+    throw new Error(e.message || "Unknown error occurred in fetchBusinessAPI");
   }
 }
