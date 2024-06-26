@@ -37,7 +37,7 @@ export default function ContactUs() {
       setFormData(initialFormData);
     } catch (e) {
       console.log("submission error:", e.message);
-      setError("Failed to send. Please try again");
+      setError("Something went wrong. Please try again.");
       setShowModal(true);
     } finally {
       setIsLoading(false);

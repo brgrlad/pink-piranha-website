@@ -17,11 +17,18 @@ export default async function fetchBusinessAPI(url, formData) {
       cache: "no-store",
     });
 
+    if (!res.ok) {
+      throw new Error(`Server responded with ${res.status}: ${res.statusText}`);
+    }
+
     const data = await res.json();
-    console.log(data);
+    console.log("the data");
+    console.log(data.message);
 
     if (!data.ok) {
-      throw new Error(data.message || "unknown error ocurred");
+      throw new Error(
+        data.message || "unknown error ocurred in fetchBusinessAPI"
+      );
     }
 
     return data;
