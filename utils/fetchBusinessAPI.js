@@ -18,7 +18,9 @@ export default async function fetchBusinessAPI(url, formData) {
     });
 
     if (!res.ok) {
-      throw new Error(`Server responded with ${res.status}: ${res.statusText}`);
+      throw new Error(
+        `Server responded with ${res.status}: ${res.statusText}. => Error ocurred in fetchBusinessAPI`
+      );
     }
 
     const data = await res.json();
