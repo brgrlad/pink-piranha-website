@@ -18,6 +18,7 @@ export default async function fetchBusinessAPI(url, formData) {
     });
 
     const data = await res.json();
+    console.log(data);
 
     if (!data.ok) {
       throw new Error(data.message || "unknown error ocurred");

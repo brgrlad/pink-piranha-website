@@ -15,6 +15,7 @@ const initialFormData = {
 
 export default function ContactUs() {
   const [formData, setFormData] = useState(initialFormData);
+  const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const [showModal, setShowModal] = useState(false);
 
@@ -29,6 +30,7 @@ export default function ContactUs() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     try {
       await fetchBusinessAPI("/api/submit-form", formData);
       setShowModal(true);
@@ -37,6 +39,8 @@ export default function ContactUs() {
       console.log("submission error:", e.message);
       setError("Failed to send. Please try again");
       setShowModal(true);
+    } finally {
+      setIsLoading(false);
     }
   };
 
