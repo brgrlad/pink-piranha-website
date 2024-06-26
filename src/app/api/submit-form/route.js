@@ -1,13 +1,12 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-export async function POST(req, res) {
-  // let API_KEY = "re_aLHEaDE1_GesU9Q9jNWXBy7bdHdkchQ34";
+export async function POST(req) {
   const body = await req.text();
 
   const parsedBody = JSON.parse(body);
 
-  const resend = new Resend(API_KEY);
+  const resend = new Resend(process.env.API_KEY);
 
   try {
     const { firstName, emailAddress, phoneNumber, message } = parsedBody;
