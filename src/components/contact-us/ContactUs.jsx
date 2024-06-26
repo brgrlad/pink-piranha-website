@@ -1,7 +1,8 @@
 "use client";
-import { useReducer, useState, useEffect } from "react";
+import { useReducer, useState } from "react";
 import Modal from "@/components/modal/Modal";
 import ContactInfo from "../contact-info/ContactInfo";
+import fetchBusinessAPI from "../../../utils/fetchBusinessAPI";
 
 // INITIAL FORM DATA
 const initialFormData = {
@@ -11,52 +12,31 @@ const initialFormData = {
   message: "",
 };
 
-// DISPATCH FORM ACTIONS
-const formReducer = (state, action) => {
-  switch (action.type) {
-    case "SET_FIELD":
-      return {
-        ...state,
-        [action.fieldName]: action.value,
-      };
-    case "RESET_FORM":
-      return initialFormData;
-    default:
-      return state;
-  }
-};
-
 export default function ContactUs() {
-  useEffect(() => {
-    const callAPI = async () => {
-      try {
-        const res = await fetch("/api/submit-form", {
-          method: "GET",
-          cache: "no-store",
-        });
-        const data = await res.json();
-      } catch (e) {
-        console.log(e);
-      }
-    };
-
-    callAPI();
-  }, []);
-  // STATES FOR FORM AND MODAL
-  const [formData, dispatch] = useReducer(formReducer, initialFormData);
+  const [formData, setFormData] = useState(initialFormData);
   const [showModal, setShowModal] = useState(false);
 
   // HANDLE INPUT CHANGE
   const handleChange = (e) => {
     const { name, value } = e.target;
-    dispatch({ type: "SET_FIELD", fieldName: name, value });
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
 
-  // HANDLE FORM SUBMIT: SEND DATA TO BACKEND, SHOW CONFIRMATION MODAL IN THE UI AND RESET FORM
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    try {
+      let data = await fetchBusinessAPI("/api/submit-form", formData);
+      console.log(data);
+    } catch (e) {
+      console.log(e.message);
+    }
+
+    setFormData(initialFormData);
     setShowModal(true);
-    dispatch({ type: "RESET_FORM" });
   };
 
   return (
@@ -85,12 +65,9 @@ export default function ContactUs() {
             name="contact-us"
             method="POST"
             className="mb-20"
-            data-netlify="true"
             value={formData}
             onSubmit={(e) => handleSubmit(e)}
           >
-            <input type="hidden" name="contact-us" value={formData} />
-
             {/* FIRST NAME FIELD */}
             <div className="mb-5">
               <label
