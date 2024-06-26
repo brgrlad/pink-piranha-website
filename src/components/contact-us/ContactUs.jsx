@@ -1,5 +1,6 @@
 "use client";
-import { useReducer, useState } from "react";
+import { useState } from "react";
+import { Resend } from "resend";
 import Modal from "@/components/modal/Modal";
 import ContactInfo from "../contact-info/ContactInfo";
 import fetchBusinessAPI from "../../../utils/fetchBusinessAPI";
@@ -32,6 +33,7 @@ export default function ContactUs() {
       let data = await fetchBusinessAPI("/api/submit-form", formData);
       console.log(data);
     } catch (e) {
+      console.log("contact us 2");
       console.log(e.message);
     }
 
@@ -47,7 +49,7 @@ export default function ContactUs() {
       {/* MODAL IS SHOWN UPON SUBMIT */}
       {showModal && (
         <Modal
-          title={`Thank you!`}
+          title={`Hey, thanks!`}
           message={"We will reply as soon as possible."}
           onClose={() => setShowModal(false)}
         />
