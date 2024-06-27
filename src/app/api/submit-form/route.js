@@ -14,7 +14,7 @@ export async function POST(req) {
 
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "bgrecchi@gmail.com",
+      to: ["bgrecchi@gmail.com"],
       subject: `New message from ${firstName} , Phone: ${phoneNumber}`,
       html: `<p> FROM: ${emailAddress} </p> MESSAGE: <p> ${message}  </p>`,
     });
@@ -30,9 +30,9 @@ export async function POST(req) {
       { status: 200 }
     );
   } catch (e) {
-    console.log(e);
+    console.error("Error in POST handler:", e);
     return NextResponse.json(
-      { ok: false, message: e.message },
+      { ok: false, message: e.message || "Unknown error in POST handler" },
       { status: 500 }
     );
   }

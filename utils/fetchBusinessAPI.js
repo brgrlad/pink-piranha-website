@@ -18,8 +18,8 @@ export default async function fetchBusinessAPI(url, formData) {
     });
 
     if (!res.ok) {
-      console.log("response type for !res.ok");
-      console.log(typeof res);
+      console.log("response for !res.ok");
+      console.log(res);
       throw new Error(
         `Server responded with ${res.status}: ${res.statusText}.`
       );
