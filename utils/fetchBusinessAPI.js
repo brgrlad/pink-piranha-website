@@ -18,20 +18,28 @@ export default async function fetchBusinessAPI(url, formData) {
     });
 
     if (!res.ok) {
+      console.log("response type for !res.ok");
+      console.log(typeof res);
       throw new Error(
-        `Server responded with ${res.status}: ${res.statusText}. => Error ocurred in fetchBusinessAPI`
+        `Server responded with ${res.status}: ${res.statusText}.`
       );
     }
 
-    const data = await res.json();
-    console.log("the data");
-    console.log(data.message);
-
-    if (!data.ok) {
+    if (!res.ok) {
       throw new Error(
         data.message || "unknown error ocurred in fetchBusinessAPI"
       );
     }
+
+    const data = await res.json();
+
+    // const data = await res.json();
+
+    // if (!data.ok) {
+    //   throw new Error(
+    //     data.message || "unknown error ocurred in fetchBusinessAPI"
+    //   );
+    // }
 
     return data;
   } catch (e) {
