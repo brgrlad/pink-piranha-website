@@ -1,26 +1,30 @@
-export default async function fetchBusinessAPI(url, formData, file) {
-  try {
-    // create new FormData()
-    // append content and file
+import { NextResponse } from "next/server";
 
-    //fetch api  - must include method and the formdata
+export default async function fetchStaffAPI(url, formData, file) {
+  const form = new FormData();
+
+  form.append("fullName", formData.fullName);
+  form.append("emailAddress", formData.emailAddress);
+  form.append("phoneNumber", formData.phoneNumber);
+  form.append("file", file);
+  form.append("message", formData.message);
+
+  try {
     const res = await fetch(url, {
       method: "POST",
-      headers: {
-        //add header type here
-      },
-      //include body and its type
-      cache: "no-store",
+      body: form,
     });
 
-    const data = await res.json();
+    if (!res.ok) {
+      throw new Error(
+        `Server responded with ${res.status}: ${res.statusText} in fetchStaffAPI.` ||
+          "Unknown error occurred in fetchStaffAPI"
+      );
+    }
 
-    //check for errors - return message in case there are errors (file size, type etc?)
-
-    // return the data if no errors
-    console.log(data);
-    return data;
+    return res;
   } catch (e) {
-    return e;
+    console.error("Error in fetchStaffAPI:", e);
+    throw new Error(e.message || "Unknown error occurred in fetchStaffAPI");
   }
 }

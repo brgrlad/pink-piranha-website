@@ -1,3 +1,5 @@
+import { NextResponse } from "next/server";
+
 export default async function fetchBusinessAPI(url, formData) {
   if (!url || typeof url !== "string") {
     throw new Error("URL of type 'string' must be provided");
@@ -18,32 +20,29 @@ export default async function fetchBusinessAPI(url, formData) {
     });
 
     if (!res.ok) {
-      console.log("response for !res.ok");
-      console.log(res);
       throw new Error(
-        `Server responded with ${res.status}: ${res.statusText}.`
+        `Server responded with ${res.status}: ${res.statusText} in fetchBusinessAPI.` ||
+          "unknown error ocurred in fetchBusinessAPI"
       );
     }
 
-    if (!res.ok) {
-      throw new Error(
-        data.message || "unknown error ocurred in fetchBusinessAPI"
-      );
-    }
-
-    const data = await res.json();
-
+    // not sure I need to convert to JSON here before returning it?
     // const data = await res.json();
 
-    // if (!data.ok) {
-    //   throw new Error(
-    //     data.message || "unknown error ocurred in fetchBusinessAPI"
-    //   );
-    // }
-
-    return data;
+    return NextResponse.json(
+      { ok: true, message: "E-mail sent!" },
+      { status: 200 }
+    );
   } catch (e) {
     console.log("Error in fetchBusinessAPI:", e);
-    throw new Error(e.message || "Unknown error occurred in fetchBusinessAPI");
+    return NextResponse.json(
+      {
+        ok: false,
+        message: e.message || "Unknown error in business-form API handler",
+      },
+      { status: 500 }
+    );
+
+    // throw new Error(e.message || "Unknown error occurred in fetchBusinessAPI");
   }
 }

@@ -1,12 +1,12 @@
 "use client";
 import { useReducer, useState } from "react";
+import fetchStaffAPI from "../../../../utils/fetchStaffAPI";
 import Modal from "@/components/modal/Modal";
 
 const initialFormData = {
-  firstName: "",
+  fullName: "",
   emailAddress: "",
   phoneNumber: "",
-  uploadedFile: "",
   message: "",
 };
 
@@ -26,6 +26,8 @@ const formReducer = (state, action) => {
 
 export default function WorkWithUs() {
   const [formData, dispatch] = useReducer(formReducer, initialFormData);
+  const [file, setFile] = useState(null);
+
   const [showMenu, setShowMenu] = useState(false);
 
   const handleChange = (e) => {
@@ -33,10 +35,15 @@ export default function WorkWithUs() {
     dispatch({ type: "SET_FIELD", fieldName: name, value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setShowMenu(true);
-    dispatch({ type: "RESET_FORM" });
+    try {
+      let submit = await fetchStaffAPI("/api/staff-form", formData, file);
+      return submit;
+    } catch (e) {
+      console.log("submission error:", e.message);
+      return e;
+    }
   };
 
   return (
@@ -61,16 +68,16 @@ export default function WorkWithUs() {
           >
             <div className="mb-5">
               <label
-                htmlFor="firstName"
+                htmlFor="fullName"
                 className="mb-2 text-sm font-medium text-dark-pink"
               >
                 Name
               </label>
               <input
                 type="text"
-                id="FirstName"
-                name="firstName"
-                value={formData.firstName}
+                id="fullName"
+                name="fullName"
+                value={formData.fullName}
                 onChange={handleChange}
                 required
                 className="block bg-light-pink border border-dark-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink focus:border-dark-pink w-full p-2.5"
@@ -119,8 +126,7 @@ export default function WorkWithUs() {
               type="file"
               id="uploadedFile"
               name="uploadedFile"
-              value={formData.uploadedFile}
-              onChange={handleChange}
+              onChange={(e) => setFile(e.target.files[0])}
               className="block w-full p-2 bg-light-pink border border-dark-pink text-dark-pink text-sm rounded-2xl focus:ring-dark-pink "
             />
             <label

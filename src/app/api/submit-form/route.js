@@ -6,7 +6,7 @@ export async function POST(req) {
   const body = await req.text();
   const parsedBody = JSON.parse(body);
 
-  // CREATE AN INSTANCE OF RESEND
+  // CREATE AN INSTANCE OF RESEND EMAIL API
   const resend = new Resend(process.env.API_KEY);
 
   try {
@@ -23,8 +23,6 @@ export async function POST(req) {
       throw new Error(error.message);
     }
 
-    console.log(data);
-
     return NextResponse.json(
       { ok: true, message: "E-mail sent successfully" },
       { status: 200 }
@@ -32,7 +30,10 @@ export async function POST(req) {
   } catch (e) {
     console.error("Error in POST handler:", e);
     return NextResponse.json(
-      { ok: false, message: e.message || "Unknown error in POST handler" },
+      {
+        ok: false,
+        message: e.message || "Unknown error in business-form API handler",
+      },
       { status: 500 }
     );
   }
