@@ -27,8 +27,7 @@ const formReducer = (state, action) => {
 export default function WorkWithUs() {
   const [formData, dispatch] = useReducer(formReducer, initialFormData);
   const [file, setFile] = useState(null);
-
-  const [showMenu, setShowMenu] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -38,21 +37,26 @@ export default function WorkWithUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let submit = await fetchStaffAPI("/api/staff-form", formData, file);
-      return submit;
+      let res = await fetchStaffAPI("/api/staff-form", formData, file);
+      let data = await res.json();
+      if (!data.ok) {
+        throw new Error(data);
+      }
+
+      setShowModal(true);
+      //clear form
     } catch (e) {
-      console.log("submission error:", e.message);
       return e;
     }
   };
 
   return (
     <>
-      {showMenu && (
+      {showModal && (
         <Modal
           title={`Thank you!`}
           message={"We will reply as soon as possible."}
-          onClose={() => setShowMenu(false)}
+          onClose={() => setShowModal(false)}
         />
       )}
       <section className="grid grid-cols-1 lg:grid-cols-3 px-5 md:px-20 py-10 md:py-20 bg-light-pink text-dark-pink">

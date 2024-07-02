@@ -24,7 +24,6 @@ export default async function fetchStaffAPI(url, formData, file) {
 
     return res;
   } catch (e) {
-    console.error("Error in fetchStaffAPI:", e);
     throw new Error(e.message || "Unknown error occurred in fetchStaffAPI");
   }
 }

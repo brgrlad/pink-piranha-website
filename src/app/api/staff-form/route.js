@@ -1,11 +1,13 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+// export const config = {
+//   api: {
+//     bodyParser: false,
+//   },
+// };
+
+export const bodyParser = false;
 
 export async function POST(req) {
   const resend = new Resend(process.env.API_KEY);
@@ -45,8 +47,6 @@ export async function POST(req) {
         error.message || "Unknown error in staff-form API handler"
       );
     }
-
-    console.log(data);
 
     return NextResponse.json(
       { ok: true, data: "Email sent successfully" },
