@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="mr-auto place-self-center col-span-12 xl:col-span-7">
           <h2 className="max-w-2xl mb-4 mt-20 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl border-0">
             We specialize in the art of assembling exceptional teams that bring
-            your vision to life.
+            your vision to life!
           </h2>
           <p className="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl mt-5">
             From concept to execution, we handle the details, ensuring that
