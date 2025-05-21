@@ -40,11 +40,11 @@ export default function Footer() {
                     PHOTO GALLERY
                   </Link>
                 </li>
-                <li className="mb-3">
+                {/* <li className="mb-3">
                   <Link href="/meet-the-team" className="hover:underline">
                     MEET THE TEAM
                   </Link>
-                </li>
+                </li> */}
                 <li className="mb-3">
                   <Link href="/#contact-us" className="hover:underline">
                     CONTACT US
