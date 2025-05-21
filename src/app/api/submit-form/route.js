@@ -7,7 +7,7 @@ export async function POST(req) {
   const parsedBody = JSON.parse(body);
 
   // CREATE AN INSTANCE OF RESEND EMAIL API
-  const resend = new Resend(process.env.API_KEY);
+  const resend = new Resend(process.env.NEXT_PUBLIC_API_KEY);
 
   try {
     const { firstName, emailAddress, phoneNumber, message } = parsedBody;

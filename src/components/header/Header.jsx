@@ -15,7 +15,7 @@ export default function Header() {
         <Image src={logo} width={100} height={100} alt="Pink Piranha logo" />
       </Link>
 
-      <Link href="work-with-us">
+      <Link href="#contact-us">
         <button
           type="button"
           className=" text-dark-pink  bg-light-pink border border-dark-pink   mt-[-40px]  sm:mt-[-35px] focus:outline-none focus:ring-4 text-[10px] sm:text-sm md:font-medium rounded-full text-sm px-2 md:px-4 py-0 text-center mb-2 h-10 flex items-end"

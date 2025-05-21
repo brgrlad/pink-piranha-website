@@ -10,9 +10,10 @@ import { NextResponse } from "next/server";
 export const bodyParser = false;
 
 export async function POST(req) {
-  const resend = new Resend(process.env.API_KEY);
+  const resend = new Resend(process.env.NEXT_PUBLIC_API_KEY);
 
   try {
+
     const formData = await req.formData();
 
     const file = formData.get("file");

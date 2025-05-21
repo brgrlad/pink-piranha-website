@@ -13,7 +13,7 @@ export default function Menu({ showMenu, setShowMenu }) {
     >
       <Image src={logo} width={100} height={100} alt="Pink Piranha logo" />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4 pb-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pt-4 pb-2 ">
         <div className="left-column sm:order-1 order-2">
           <LinkCard
             onClick={() => setShowMenu(false)}
@@ -45,14 +45,14 @@ export default function Menu({ showMenu, setShowMenu }) {
               </Link>
             </li>
 
-            <li className="py-2">
+            {/* <li className="py-2">
               <Link
                 href="/meet-the-team#photos"
                 onClick={() => setShowMenu(false)}
               >
                 MEET THE TEAM
               </Link>
-            </li>
+            </li> */}
             <li className="py-2" onClick={() => setShowMenu(false)}>
               <Link href="/#what-we-do"> WHAT WE DO</Link>
             </li>
